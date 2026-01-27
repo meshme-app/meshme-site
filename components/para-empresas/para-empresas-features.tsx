@@ -167,12 +167,39 @@ export default function ParaEmpresasFeatures() {
 
               {/* Image Side */}
               <div className={`relative ${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                <div className="relative flex justify-center">
-                  <img
-                    src={feature.image || "/placeholder.svg"}
-                    alt={feature.title}
-                    className="w-auto h-80 md:h-96 lg:h-[420px] object-contain rounded-xl shadow-lg"
-                  />
+                <div className="relative flex justify-center items-center h-80 md:h-96 lg:h-[420px]">
+                  {index === 1 || index === 2 ? (
+                    /* iPhone Frame for features 2 and 3 */
+                    <div className="relative h-full flex items-center">
+                      {/* iPhone Frame */}
+                      <div className="relative w-[180px] md:w-[200px] lg:w-[210px]">
+                        {/* Phone body */}
+                        <div className="relative bg-gray-900 rounded-[2rem] p-2 shadow-2xl">
+                          {/* Dynamic Island */}
+                          <div className="absolute top-2.5 left-1/2 -translate-x-1/2 w-16 h-4 bg-black rounded-full z-10" />
+                          {/* Screen */}
+                          <div className="relative bg-white rounded-[1.5rem] overflow-hidden h-[320px] md:h-[360px] lg:h-[380px]">
+                            <img
+                              src={index === 1 ? "/desafios-finalizados-screen.png" : "/meshcoins-screen.png"}
+                              alt={feature.title}
+                              className="w-full h-full object-cover object-top"
+                            />
+                          </div>
+                        </div>
+                        {/* Side button */}
+                        <div className="absolute right-[-2px] top-20 w-0.5 h-8 bg-gray-800 rounded-l-sm" />
+                        {/* Volume buttons */}
+                        <div className="absolute left-[-2px] top-16 w-0.5 h-5 bg-gray-800 rounded-r-sm" />
+                        <div className="absolute left-[-2px] top-24 w-0.5 h-8 bg-gray-800 rounded-r-sm" />
+                      </div>
+                    </div>
+                  ) : (
+                    <img
+                      src={feature.image || "/placeholder.svg"}
+                      alt={feature.title}
+                      className="w-auto h-80 md:h-96 lg:h-[420px] object-contain rounded-xl shadow-lg"
+                    />
+                  )}
                   {/* Decorative gradient */}
                   <div
                     className={`absolute -z-10 inset-0 ${feature.color} opacity-10 rounded-xl blur-2xl transform scale-105`}
