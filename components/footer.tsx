@@ -12,9 +12,9 @@ export default function Footer() {
           {/* About */}
           <div>
             <div className="flex items-center mb-4">
-              <span className="font-bold text-xl text-primary">Liga da Firma</span>
+              <span className="font-bold text-xl text-primary">MeshMe</span>
             </div>
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-400 mb-6">
               O maior movimento esportivo entre empresas do Brasil, promovendo saúde, bem-estar e integração através do
               esporte.
             </p>
@@ -138,7 +138,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} Liga da Firma. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} MeshMe. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
