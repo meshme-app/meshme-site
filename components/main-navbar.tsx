@@ -36,20 +36,10 @@ export default function MainNavbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-2">
-            <Link 
-              href="/" 
-              className={`px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 transform hover:scale-105 ${
-                currentPath === "/" 
-                  ? "bg-[#FF7816] text-white shadow-lg shadow-orange-200" 
-                  : "text-gray-700 hover:bg-[#FF7816] hover:text-white hover:shadow-lg hover:shadow-orange-200"
-              }`}
-            >
-              Inicio
-            </Link>
             <Link
               href="/para-pessoas"
               className={`px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 transform hover:scale-105 ${
-                currentPath.includes("/para-pessoas") 
+                currentPath === "/" || currentPath.includes("/para-pessoas") 
                   ? "bg-[#99F700] text-black shadow-lg shadow-lime-200" 
                   : "text-gray-700 hover:bg-[#99F700] hover:text-black hover:shadow-lg hover:shadow-lime-200"
               }`}
@@ -127,20 +117,9 @@ export default function MainNavbar() {
         <div className="md:hidden bg-white shadow-xl absolute top-16 left-0 right-0 z-50 border-t border-gray-100">
           <div className="px-4 pt-4 pb-6 space-y-2">
             <Link
-              href="/"
-              className={`block px-4 py-3 rounded-xl text-base font-semibold transition-all duration-200 ${
-                currentPath === "/"
-                  ? "bg-[#FF7816] text-white shadow-md"
-                  : "text-gray-700 hover:bg-[#FF7816]/10 hover:text-[#FF7816]"
-              }`}
-              onClick={() => setIsOpen(false)}
-            >
-              Inicio
-            </Link>
-            <Link
               href="/para-pessoas"
               className={`block px-4 py-3 rounded-xl text-base font-semibold transition-all duration-200 ${
-                currentPath.includes("/para-pessoas")
+                currentPath === "/" || currentPath.includes("/para-pessoas")
                   ? "bg-[#99F700] text-black shadow-md"
                   : "text-gray-700 hover:bg-[#99F700]/10 hover:text-[#99F700]"
               }`}
