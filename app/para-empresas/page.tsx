@@ -26,6 +26,7 @@ import ParaEmpresasDifferential from "@/components/para-empresas/para-empresas-d
 import ParaEmpresasFeatures from "@/components/para-empresas/para-empresas-features"
 import ParaEmpresasCTA from "@/components/para-empresas/para-empresas-cta"
 import FloatingWhatsAppButton from "@/components/app/floating-whatsapp-button"
+import CompanyCarousel from "@/components/company-carousel"
 
 export default function ParaEmpresasPage() {
   return (
@@ -33,6 +34,7 @@ export default function ParaEmpresasPage() {
       <MainNavbar />
       <div className="pt-16">
         <ParaEmpresasHero />
+        <CompanyCarousel />
         <ParaEmpresasProblem />
         <ParaEmpresasDifferential />
         <ParaEmpresasFeatures />
