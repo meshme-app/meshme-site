@@ -104,11 +104,38 @@ export default function ParaPessoasFeatures() {
               {/* Image Side */}
               <div className={`relative ${index % 2 === 1 ? "lg:order-1" : ""}`}>
                 <div className="relative flex justify-center">
-                  <img
-                    src={feature.image || "/placeholder.svg"}
-                    alt={feature.title}
-                    className="w-auto h-80 md:h-96 lg:h-[420px] object-contain rounded-xl shadow-lg"
-                  />
+                  {index === 0 ? (
+                    /* iPhone Frame for first feature */
+                    <div className="relative">
+                      {/* iPhone Frame */}
+                      <div className="relative w-[280px] md:w-[320px] lg:w-[340px]">
+                        {/* Phone body */}
+                        <div className="relative bg-gray-900 rounded-[3rem] p-3 shadow-2xl">
+                          {/* Dynamic Island */}
+                          <div className="absolute top-4 left-1/2 -translate-x-1/2 w-28 h-7 bg-black rounded-full z-10" />
+                          {/* Screen */}
+                          <div className="relative bg-white rounded-[2.5rem] overflow-hidden">
+                            <img
+                              src="/desafio-premiacao-screen.png"
+                              alt={feature.title}
+                              className="w-full h-auto object-cover"
+                            />
+                          </div>
+                        </div>
+                        {/* Side button */}
+                        <div className="absolute right-[-3px] top-28 w-1 h-12 bg-gray-800 rounded-l-sm" />
+                        {/* Volume buttons */}
+                        <div className="absolute left-[-3px] top-24 w-1 h-8 bg-gray-800 rounded-r-sm" />
+                        <div className="absolute left-[-3px] top-36 w-1 h-12 bg-gray-800 rounded-r-sm" />
+                      </div>
+                    </div>
+                  ) : (
+                    <img
+                      src={feature.image || "/placeholder.svg"}
+                      alt={feature.title}
+                      className="w-auto h-80 md:h-96 lg:h-[420px] object-contain rounded-xl shadow-lg"
+                    />
+                  )}
                   {/* Decorative gradient */}
                   <div
                     className={`absolute -z-10 inset-0 ${feature.color} opacity-10 rounded-xl blur-2xl transform scale-105`}
