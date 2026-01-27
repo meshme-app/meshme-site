@@ -43,7 +43,7 @@ const features = [
     description: "Sistema de recompensas que valoriza a constância e o impacto coletivo.",
     color: "bg-[#FF7816]",
     iconColor: "text-white",
-    image: "/challenge-feed-mockup.png",
+    image: "/meshcoins-iphone.png",
     bullets: [
       "Moeda digital exclusiva da MeshMe",
       "Troca por produtos e experiências saudáveis",
