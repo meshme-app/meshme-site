@@ -7,7 +7,7 @@ export default function ParaEmpresasHero() {
   return (
     <section
       id="para-empresas"
-      className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-20 overflow-hidden"
+      className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 pt-32 pb-20 overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute top-10 right-10 w-32 h-32 bg-[#FF7816]/20 rounded-full blur-3xl animate-pulse" />

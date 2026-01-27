@@ -79,11 +79,11 @@ const blogPosts = [
 
 export default function BlogPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-accent/30">
+    <div className="min-h-screen flex flex-col">
       <MainNavbar />
-      <div className="pt-16 flex-1">
+      <div className="flex-1">
         {/* Hero Section */}
-        <section className="bg-white py-20 relative overflow-hidden">
+        <section className="bg-white pt-32 pb-20 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-[180px] h-[180px] opacity-30 overflow-hidden">
             <div className="w-full h-full animate-rotate-slow">
               <img src="/sun-orange.png" alt="" className="w-full h-full object-contain" />
@@ -123,7 +123,7 @@ export default function BlogPage() {
                     <CardDescription className="text-gray-600 line-clamp-3 mb-4">{post.description}</CardDescription>
                     <Button
                       variant="outline"
-                      className="w-full group-hover:bg-primary group-hover:text-white transition-colors"
+                      className="w-full group-hover:bg-primary group-hover:text-white transition-colors bg-transparent"
                       asChild
                     >
                       <Link href={`/blog/${post.slug}`}>

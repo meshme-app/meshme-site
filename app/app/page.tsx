@@ -40,9 +40,9 @@ import FloatingWhatsAppButton from "@/components/app/floating-whatsapp-button"
 
 export default function AppPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-accent/30">
+    <div className="min-h-screen flex flex-col">
       <MainNavbar />
-      <div className="pt-16">
+      <div>
         <AppHero />
         <AppCompanies />
         <AppAbout />

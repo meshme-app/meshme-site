@@ -30,9 +30,9 @@ import CompanyCarousel from "@/components/company-carousel"
 
 export default function ParaEmpresasPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-accent/30">
+    <div className="min-h-screen flex flex-col">
       <MainNavbar />
-      <div className="pt-16">
+      <div>
         <ParaEmpresasHero />
         <CompanyCarousel />
         <ParaEmpresasProblem />

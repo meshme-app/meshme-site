@@ -9,7 +9,7 @@ export default function ParaPessoasHero() {
   return (
     <section
       id="para-pessoas"
-      className="relative bg-gradient-to-br from-accent via-white to-accent/50 py-20 overflow-hidden"
+      className="relative bg-gradient-to-br from-accent via-white to-accent/50 pt-32 pb-20 overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute top-10 right-10 w-32 h-32 bg-[#FF7816]/10 rounded-full blur-3xl animate-pulse" />
