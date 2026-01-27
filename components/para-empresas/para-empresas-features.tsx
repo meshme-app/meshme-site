@@ -168,8 +168,8 @@ export default function ParaEmpresasFeatures() {
               {/* Image Side */}
               <div className={`relative ${index % 2 === 1 ? "lg:order-1" : ""}`}>
                 <div className="relative flex justify-center items-center h-80 md:h-96 lg:h-[420px]">
-                  {index === 1 || index === 2 ? (
-                    /* iPhone Frame for features 2 and 3 */
+                  {index === 1 ? (
+                    /* iPhone Frame for feature 2 */
                     <div className="relative h-full flex items-center">
                       {/* iPhone Frame */}
                       <div className="relative w-[180px] md:w-[200px] lg:w-[210px]">
@@ -180,7 +180,7 @@ export default function ParaEmpresasFeatures() {
                           {/* Screen */}
                           <div className="relative bg-white rounded-[1.5rem] overflow-hidden h-[320px] md:h-[360px] lg:h-[380px]">
                             <img
-                              src={index === 1 ? "/desafios-finalizados-screen.png" : "/meshcoins-screen.png"}
+                              src="/desafios-finalizados-screen.png"
                               alt={feature.title}
                               className="w-full h-full object-cover object-top"
                             />
