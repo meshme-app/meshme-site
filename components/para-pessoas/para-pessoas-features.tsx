@@ -104,8 +104,8 @@ export default function ParaPessoasFeatures() {
               {/* Image Side */}
               <div className={`relative ${index % 2 === 1 ? "lg:order-1" : ""}`}>
                 <div className="relative flex justify-center items-center h-80 md:h-96 lg:h-[420px]">
-                  {index === 0 ? (
-                    /* iPhone Frame for first feature */
+                  {index === 0 || index === 1 || index === 3 ? (
+                    /* iPhone Frame for features 1, 2, and 4 */
                     <div className="relative h-full flex items-center">
                       {/* iPhone Frame */}
                       <div className="relative w-[180px] md:w-[200px] lg:w-[210px]">
@@ -114,11 +114,17 @@ export default function ParaPessoasFeatures() {
                           {/* Dynamic Island */}
                           <div className="absolute top-2.5 left-1/2 -translate-x-1/2 w-16 h-4 bg-black rounded-full z-10" />
                           {/* Screen */}
-                          <div className="relative bg-white rounded-[1.5rem] overflow-hidden">
+                          <div className="relative bg-white rounded-[1.5rem] overflow-hidden h-[320px] md:h-[360px] lg:h-[380px]">
                             <img
-                              src="/desafio-premiacao-screen.png"
+                              src={
+                                index === 0 
+                                  ? "/desafio-premiacao-screen.png" 
+                                  : index === 1 
+                                    ? "/desafio-sem-meta-screen.png"
+                                    : "/desafios-finalizados-screen.png"
+                              }
                               alt={feature.title}
-                              className="w-full h-auto object-cover"
+                              className="w-full h-full object-cover object-top"
                             />
                           </div>
                         </div>
