@@ -1,10 +1,3 @@
-export const metadata = {
-  title: "Política de Privacidade - MeshMe",
-  robots: {
-    index: false,
-    follow: false
-  }
-}
 "use client"
 
 import { useState, useEffect } from "react"
