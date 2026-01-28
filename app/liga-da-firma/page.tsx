@@ -34,11 +34,9 @@ export default function LigaDaFirmaPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <MainNavbar />
-      <div className="pt-16">
-        {" "}
-        {/* Add padding to account for fixed navbar */}
+      <div>
         {/* Hero Section */}
-        <section id="sobre-liga" className="relative bg-white py-20 overflow-hidden">
+        <section id="sobre-liga" className="relative bg-white pt-32 pb-20 overflow-hidden">
           <GridBackground />
           <div className="absolute top-0 right-0 w-[180px] h-[180px] opacity-30 overflow-hidden">
             <div className="w-full h-full animate-rotate-slow">

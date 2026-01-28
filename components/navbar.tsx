@@ -32,6 +32,12 @@ export default function Navbar() {
               Sobre
             </Link>
             <Link
+              href="/blog"
+              className="text-gray-600 hover:text-primary transform hover:scale-110 transition-transform"
+            >
+              Blog
+            </Link>
+            <Link
               href="#detalhes"
               className="text-gray-600 hover:text-primary transform hover:scale-110 transition-transform"
             >
@@ -89,6 +95,13 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               Sobre
+            </Link>
+            <Link
+              href="/blog"
+              className="block py-2 text-gray-600 hover:text-primary"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Blog
             </Link>
             <Link
               href="#detalhes"

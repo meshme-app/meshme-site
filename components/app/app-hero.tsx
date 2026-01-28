@@ -7,7 +7,7 @@ export default function AppHero() {
   return (
     <section
       id="sobre-app"
-      className="relative bg-gradient-to-br from-accent via-white to-accent/50 py-20 overflow-hidden"
+      className="relative bg-gradient-to-br from-accent via-white to-accent/50 pt-32 pb-20 overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute top-10 right-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-float"></div>
@@ -47,7 +47,7 @@ export default function AppHero() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary text-primary hover:bg-primary/10 group"
+                className="border-primary text-primary hover:bg-primary/10 group bg-transparent"
                 asChild
               >
                 <a href="#funcionalidades">

@@ -54,30 +54,42 @@ export default function CompanyCarousel() {
   const duplicatedCompanies = [...companies, ...companies]
 
   return (
-    <div className="w-full overflow-hidden">
-      <div ref={scrollRef} className="flex gap-8 py-4 overflow-x-hidden">
-        {duplicatedCompanies.map((company, index) => (
-          <Card
-            key={index}
-            className={`flex-shrink-0 w-44 h-24 flex items-center justify-center p-4 border border-gray-200 transform hover:rotate-3 hover:scale-110 transition-all duration-300 ${
-              company.darkBg ? "bg-gray-900" : "bg-white"
-            }`}
-          >
-            <div className="flex items-center justify-center h-full w-full">
-              <img
-                src={company.logo || "/placeholder.svg"}
-                alt={`${company.name} logo`}
-                className="object-contain"
-                style={{
-                  height: company.height,
-                  maxWidth: "100%",
-                  filter: company.darkBg ? "brightness(1.2)" : "none",
-                }}
-              />
-            </div>
-          </Card>
-        ))}
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-4 mb-8">
+        <div className="text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
+            <span className="text-[#FF7816]">times</span> que estão no app
+          </h2>
+          <p className="text-lg text-gray-600">
+            Empresas que já transformaram sua cultura através da MeshMe
+          </p>
+        </div>
       </div>
-    </div>
+      <div className="w-full overflow-hidden">
+        <div ref={scrollRef} className="flex gap-8 py-4 overflow-x-hidden">
+          {duplicatedCompanies.map((company, index) => (
+            <Card
+              key={index}
+              className={`flex-shrink-0 w-44 h-24 flex items-center justify-center p-4 border border-gray-200 transform hover:rotate-3 hover:scale-110 transition-all duration-300 ${
+                company.darkBg ? "bg-gray-900" : "bg-white"
+              }`}
+            >
+              <div className="flex items-center justify-center h-full w-full">
+                <img
+                  src={company.logo || "/placeholder.svg"}
+                  alt={`${company.name} logo`}
+                  className="object-contain"
+                  style={{
+                    height: company.height,
+                    maxWidth: "100%",
+                    filter: company.darkBg ? "brightness(1.2)" : "none",
+                  }}
+                />
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
