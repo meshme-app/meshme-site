@@ -1,0 +1,113 @@
+# MeshMe - Guia de Referencia Visual para E-mails HTML
+
+Use este documento como contexto ao criar e-mails HTML para a MeshMe.
+Todos os e-mails devem usar tabelas para compatibilidade com clientes de e-mail (Gmail, Outlook, Apple Mail).
+
+---
+
+## CORES DA MARCA
+
+- Laranja (Primary/CTA): #FF7816 | rgb(255,120,22) | hsl(24,100%,54%)
+- Verde (Secondary/Destaques): #88DB02 | rgb(136,219,2) | hsl(84,98%,44%)
+- Preto (Texto principal): #111111
+- Cinza escuro (Texto secundario): #555555
+- Cinza medio (Texto terciario): #888888
+- Cinza claro (Fundo de secoes): #F8F8F8
+- Branco (Fundo principal): #FFFFFF
+- Footer background: #1a1a2e (escuro, quase preto)
+- Footer texto: #cccccc
+
+## TIPOGRAFIA
+
+- Fonte principal: Inter (Google Font), fallback: Arial, Helvetica, sans-serif
+- Titulos: font-weight 800 (Extra Bold) ou 700 (Bold)
+- Corpo: font-weight 400 (Regular)
+- Tamanhos sugeridos:
+  - H1 principal: 32-36px
+  - H2 secoes: 24-28px
+  - H3 subtitulos: 18-20px
+  - Corpo: 16px
+  - Texto pequeno/footer: 13-14px
+  - Line-height corpo: 1.6
+
+## PADROES VISUAIS DO SITE
+
+### Cards (estilo "Como funciona" da pagina Healthy Hour)
+- Fundo branco (#FFFFFF)
+- Borda esquerda colorida de 4px (alterna entre laranja #FF7816 e verde #88DB02)
+- Sombra suave: box-shadow: 0 4px 15px rgba(0,0,0,0.1)
+- Border-radius: 12px
+- Padding interno: 24px
+- Numeros em circulos coloridos (32x32px, cor de fundo laranja ou verde, texto branco, border-radius 50%)
+
+### Botoes CTA
+- Background: #FF7816 (laranja) ou #88DB02 (verde)
+- Texto: #FFFFFF (branco), font-weight bold
+- Border-radius: 50px (pill shape / rounded-full)
+- Padding: 16px 32px
+- Font-size: 16-18px
+- Sem borda
+- Hover (para webmail): background escurece levemente
+
+### Secoes alternadas
+- Secao 1: fundo branco #FFFFFF
+- Secao 2: fundo cinza claro #F8F8F8
+- Secao 3: fundo branco #FFFFFF
+- (alternar conforme necessidade)
+
+## ESTRUTURA PADRAO DE E-MAIL
+
+### Header
+- Fundo branco
+- Logo MeshMe centralizado (usar imagem hospedada ou texto "MeshMe" em laranja #FF7816, font-weight 800, font-size 28px)
+- Linha separadora sutil abaixo: 2px solid #FF7816
+
+### Corpo
+- Largura maxima: 600px, centralizado
+- Padding lateral: 24-32px
+- Secoes separadas com espacamento de 32-40px
+
+### Footer
+- Fundo escuro: #1a1a2e
+- Texto cinza claro: #cccccc
+- Icones de redes sociais (Instagram, LinkedIn)
+- Links uteis
+- Informacoes de contato:
+  - Endereco: Rua Doutor Renato Paes de Barros 618 Conj 1, Itaim Bibi, Sao Paulo - SP - 04530-000
+  - Telefone: (11) 91779-0769
+  - E-mail: sabermais@meshme.com.br
+- Copyright: "(ano) MeshMe. Todos os direitos reservados."
+- Link de descadastro
+
+### Redes Sociais
+- Instagram: https://www.instagram.com/_meshme
+- LinkedIn: https://www.linkedin.com/company/meshmeapp/
+
+## TOM DE VOZ
+
+- Informal mas profissional
+- Energetico e motivacional
+- Usa "voce" (tratamento direto)
+- Emojis sao bem-vindos em e-mails (diferente do site)
+- Assuntos como esporte, bem-estar, networking, conexao entre empresas
+
+## CONTEXTO DA EMPRESA
+
+A MeshMe e o maior movimento esportivo entre empresas do Brasil, promovendo saude, bem-estar e integracao atraves do esporte. Produtos/eventos principais:
+- Healthy Hour: encontros esportivos as sextas-feiras para networking entre empresas
+- InterConsultorias / InterGestoras / InterTech: torneios esportivos corporativos
+- Liga da Firma: competicoes entre empresas
+- App MeshMe: plataforma com desafios, clubes de corrida, torneios e sistema de MeshCoins
+
+## REGRAS TECNICAS PARA E-MAIL HTML
+
+1. Usar tabelas (<table>) para layout, nao divs com flexbox/grid
+2. Largura maxima 600px
+3. Inline styles obrigatorio (nao usar <style> externo exceto em <head> como fallback)
+4. Imagens com alt text, width e height definidos
+5. Fontes web com fallback: font-family: 'Inter', Arial, Helvetica, sans-serif
+6. Testar em Gmail, Outlook e Apple Mail
+7. Botoes com VML fallback para Outlook (ou usar padding em <td>)
+8. Fundo de celula via bgcolor="" atributo (alem de background-color inline)
+9. Usar &nbsp; para espacamento quando necessario
+10. Preheader text invisivel no topo para preview em clientes de e-mail
