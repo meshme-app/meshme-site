@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InterConsultorias 2026 + Healthy Hour</title>
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+  <style>
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; height: 100% !important; background-color: #f4f4f4; }
+    a { color: #FF7816; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    @media only screen and (max-width: 600px) {
+      .email-container { width: 100% !important; }
+      .fluid { max-width: 100% !important; height: auto !important; }
+      .stack-column { display: block !important; width: 100% !important; }
+      .center-on-narrow { text-align: center !important; display: block !important; margin-left: auto !important; margin-right: auto !important; }
+      h1 { font-size: 28px !important; }
+      h2 { font-size: 22px !important; }
+    }
+  </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+  <!-- Preheader (hidden text for inbox preview) -->
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">
+    InterConsultorias 2026 tem data marcada! + Primeiro Healthy Hour em 13/03
+  </div>
+
+  <!-- Full Width Background -->
+  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f4f4f4;">
+    <tr>
+      <td align="center" style="padding: 20px 10px;">
+
+        <!-- Email Container -->
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="email-container" style="background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+
+          <!-- ======== HEADER / BANNER ======== -->
+          <tr>
+            <td style="background: linear-gradient(135deg, #FF7816 0%, #e66a14 100%); padding: 40px 40px 30px 40px; text-align: center;">
+              <!-- Logo -->
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                  <td align="center" style="padding-bottom: 20px;">
+                    <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 32px; font-weight: 800; color: #ffffff; letter-spacing: -0.5px;">MeshMe</span>
+                  </td>
+                </tr>
+              </table>
+              <h1 style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 36px; font-weight: 800; color: #ffffff; line-height: 1.2;">
+                InterConsultorias 2026
+              </h1>
+              <p style="margin: 12px 0 0 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 18px; color: rgba(255,255,255,0.9); line-height: 1.5;">
+                J&aacute; tem data, local, e muitas novidades!
+              </p>
+            </td>
+          </tr>
+
+          <!-- ======== GREETING ======== -->
+          <tr>
+            <td style="padding: 36px 40px 10px 40px;">
+              <p style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 18px; font-weight: 700; color: #1a1a1a; line-height: 1.6;">
+                Boa tarde, atletas! &#127947;
+              </p>
+            </td>
+          </tr>
+
+          <!-- ======== INTERCONSULTORIAS INFO CARD ======== -->
+          <tr>
+            <td style="padding: 20px 40px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #FFF8F3; border-radius: 12px; border-left: 5px solid #FF7816;">
+                <tr>
+                  <td style="padding: 28px 28px;">
+                    <p style="margin: 0 0 16px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px; font-weight: 700; color: #FF7816;">
+                      InterConsultorias 2026
+                    </p>
+
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <td style="padding: 6px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; color: #333333; line-height: 1.6;">
+                          &#128197;&nbsp;&nbsp;<strong>29/08 (s&aacute;bado)</strong>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 6px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; color: #333333; line-height: 1.6;">
+                          &#128205;&nbsp;&nbsp;<strong>Playball Pompeia (Unidade 2) + Arena T.O.</strong>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 2px 0 6px 28px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; color: #666666; line-height: 1.5;">
+                          O dobro de quadras em rela&ccedil;&atilde;o a 2025. Arenas vizinhas, em rua sem sa&iacute;da, com controle de acesso.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 6px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; color: #333333; line-height: 1.6;">
+                          &#127915;&nbsp;&nbsp;<strong>Modalidades:</strong> futebol, futev&ocirc;lei, t&ecirc;nis, beach t&ecirc;nis, v&ocirc;lei de praia, truco, sinuca, t&ecirc;nis de mesa
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Video Link -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin-top: 16px;">
+                      <tr>
+                        <td style="border-radius: 8px; background-color: #FF7816;">
+                          <a href="https://www.youtube.com/watch?v=hcAUhmxAurQ" target="_blank" style="display: inline-block; padding: 10px 24px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; font-weight: 700; color: #ffffff; text-decoration: none;">
+                            &#128250;&nbsp; Assista o v&iacute;deo de 2025
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ======== TRANSITION TEXT ======== -->
+          <tr>
+            <td style="padding: 16px 40px 8px 40px;">
+              <p style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 16px; color: #333333; line-height: 1.7;">
+                E para voc&ecirc;s irem aquecendo ao longo do ano, vamos promover alguns encontros &agrave;s sextas-feiras, o <strong style="color: #FF7816;">Healthy Hour</strong> da MeshMe &#128293;
+              </p>
+            </td>
+          </tr>
+
+          <!-- ======== HEALTHY HOUR CARD ======== -->
+          <tr>
+            <td style="padding: 20px 40px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #F5FBE6; border-radius: 12px; border-left: 5px solid #88db02;">
+                <tr>
+                  <td style="padding: 28px 28px;">
+                    <p style="margin: 0 0 4px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; font-weight: 700; color: #88db02; text-transform: uppercase; letter-spacing: 1.5px;">
+                      &#128293; Save the Date
+                    </p>
+                    <p style="margin: 0 0 20px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 22px; font-weight: 800; color: #1a1a1a;">
+                      Primeiro Healthy Hour
+                    </p>
+
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <td style="padding: 6px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; color: #333333; line-height: 1.6;">
+                          &#128197;&nbsp;&nbsp;<strong>13/03 (sexta-feira)</strong>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 6px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; color: #333333; line-height: 1.6;">
+                          &#128344;&nbsp;&nbsp;<strong>19h</strong>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 6px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; color: #333333; line-height: 1.6;">
+                          &#128205;&nbsp;&nbsp;<strong>Arena Ibirapuera</strong>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ======== COMO FUNCIONA ======== -->
+          <tr>
+            <td style="padding: 16px 40px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f9f9f9; border-radius: 12px;">
+                <tr>
+                  <td style="padding: 28px 28px;">
+                    <p style="margin: 0 0 16px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 18px; font-weight: 700; color: #1a1a1a;">
+                      &#129300; Como funciona?
+                    </p>
+                    <p style="margin: 0 0 16px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; color: #444444; line-height: 1.7;">
+                      Pense como um Happy Hour <strong>&ldquo;Pr&eacute;-pago&rdquo;</strong> &mdash; Primeiro voc&ecirc; joga, e depois se junta &agrave; festa com m&uacute;sica boa, drinks e petiscos!
+                    </p>
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: linear-gradient(135deg, #FF7816, #e66a14); border-radius: 10px;">
+                      <tr>
+                        <td align="center" style="padding: 16px 20px;">
+                          <p style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 16px; font-weight: 800; color: #ffffff;">
+                            &#127881; O primeiro &eacute; por nossa conta!
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ======== CTA BUTTON ======== -->
+          <tr>
+            <td style="padding: 24px 40px 8px 40px;">
+              <p style="margin: 0 0 16px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; color: #444444; line-height: 1.7; text-align: center;">
+                As vagas s&atilde;o limitadas! Se voc&ecirc; tem interesse em ir, confirme sua pr&eacute;-inscri&ccedil;&atilde;o para receber mais informa&ccedil;&otilde;es.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 0 40px 32px 40px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td style="border-radius: 50px; background: linear-gradient(135deg, #88db02, #76c102);">
+                    <a href="https://luma.com/yczdpj6b" target="_blank" style="display: inline-block; padding: 16px 48px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 17px; font-weight: 800; color: #ffffff; text-decoration: none; letter-spacing: 0.3px;">
+                      Quero me pr&eacute;-inscrever
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ======== SIGN OFF ======== -->
+          <tr>
+            <td style="padding: 0 40px 36px 40px;">
+              <p style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 16px; color: #333333; line-height: 1.7; text-align: center;">
+                At&eacute; breve! &#128075;
+              </p>
+            </td>
+          </tr>
+
+          <!-- ======== FOOTER ======== -->
+          <tr>
+            <td style="background-color: #1a1a1a; padding: 30px 40px; text-align: center;">
+              <p style="margin: 0 0 10px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px; font-weight: 800; color: #ffffff;">
+                MeshMe
+              </p>
+              <p style="margin: 0 0 16px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; color: #888888; line-height: 1.5;">
+                O maior movimento esportivo entre empresas do Brasil
+              </p>
+
+              <!-- Social Links -->
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                <tr>
+                  <td style="padding: 0 8px;">
+                    <a href="https://www.instagram.com/_meshme" target="_blank" style="color: #888888; text-decoration: none; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px;">
+                      Instagram
+                    </a>
+                  </td>
+                  <td style="color: #555555; font-size: 13px;">|</td>
+                  <td style="padding: 0 8px;">
+                    <a href="https://www.linkedin.com/company/meshmeapp/" target="_blank" style="color: #888888; text-decoration: none; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px;">
+                      LinkedIn
+                    </a>
+                  </td>
+                  <td style="color: #555555; font-size: 13px;">|</td>
+                  <td style="padding: 0 8px;">
+                    <a href="https://www.meshme.com.br" target="_blank" style="color: #888888; text-decoration: none; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px;">
+                      Site
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <p style="margin: 20px 0 0 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 11px; color: #666666; line-height: 1.5;">
+                &copy; 2026 MeshMe. Todos os direitos reservados.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+        <!-- End Email Container -->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
