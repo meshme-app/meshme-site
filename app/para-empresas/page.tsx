@@ -1,20 +1,20 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "MeshMe | Para Empresas - Plataforma de bem-estar corporativo",
+  title: "MeshMe | Para Empresas - Competicoes corporativas que engajam",
   description:
-    "People-first, com governanca para o RH. Acompanhe engajamento real, crie desafios ilimitados e fortaleca comunidades esportivas na sua empresa.",
+    "A plataforma de competicoes corporativas que recompensa colaboradores pela pratica recorrente de atividade fisica. Utilizada por mais de 600 empresas em 6 paises.",
   openGraph: {
-    title: "MeshMe | Para Empresas - Plataforma de bem-estar corporativo",
+    title: "MeshMe | Para Empresas - Competicoes corporativas que engajam",
     description:
-      "People-first, com governanca para o RH. Acompanhe engajamento real, crie desafios ilimitados e fortaleca comunidades esportivas na sua empresa.",
+      "A plataforma de competicoes corporativas que recompensa colaboradores pela pratica recorrente de atividade fisica. Utilizada por mais de 600 empresas em 6 paises.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "MeshMe | Para Empresas - Plataforma de bem-estar corporativo",
+    title: "MeshMe | Para Empresas - Competicoes corporativas que engajam",
     description:
-      "People-first, com governanca para o RH. Acompanhe engajamento real, crie desafios ilimitados e fortaleca comunidades esportivas na sua empresa.",
+      "A plataforma de competicoes corporativas que recompensa colaboradores pela pratica recorrente de atividade fisica. Utilizada por mais de 600 empresas em 6 paises.",
   },
 }
 

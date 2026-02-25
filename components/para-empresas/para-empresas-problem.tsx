@@ -1,61 +1,45 @@
 "use client"
 
-import { AlertTriangle, Users, TrendingDown, Heart } from "lucide-react"
+import { Target, Repeat, Trophy, Sparkles } from "lucide-react"
 
 export default function ParaEmpresasProblem() {
   return (
     <section className="py-20 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-red-50 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-            <AlertTriangle className="h-4 w-4" />
-            O problema que o RH enfrenta hoje
+          <div className="inline-flex items-center gap-2 bg-[#FF7816]/10 text-[#FF7816] px-4 py-2 rounded-full text-sm font-semibold mb-6">
+            <Sparkles className="h-4 w-4" />
+            Nossa especialidade
           </div>
-          
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            O desafio não é ativar colaboradores.
+
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+            Somos especialistas em competicoes,
             <br />
-            <span className="text-[#FF7816]">É manter o vínculo ao longo do tempo.</span>
+            <span className="text-[#FF7816]">por que competicao engaja!</span>
           </h2>
-          
-          <div className="space-y-6 text-lg text-gray-600 max-w-3xl mx-auto">
-            <p>
-              Programas de bem-estar focam em indivíduos isolados.
-              <br />
-              Mas <span className="font-semibold text-gray-900">hábitos não se sustentam sem contexto social.</span>
-            </p>
-            <p>
-              Sem grupo, sem recorrência, sem pertencimento, <span className="text-red-500 font-semibold">o engajamento cai.</span>
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-            <div className="bg-gray-50 rounded-2xl p-6 text-center">
-              <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Users className="h-6 w-6 text-red-500" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-14">
+            <div className="bg-gray-50 rounded-2xl p-8 text-left border border-gray-100 hover:border-[#FF7816]/30 hover:shadow-lg transition-all duration-300">
+              <div className="w-14 h-14 bg-[#FF7816] rounded-xl flex items-center justify-center mb-5">
+                <Target className="h-7 w-7 text-white" />
               </div>
-              <p className="text-gray-600">Foco em indivíduos isolados</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Metas pessoais</h3>
+              <p className="text-gray-600 leading-relaxed">Jornada personalizada com AI</p>
             </div>
-            <div className="bg-gray-50 rounded-2xl p-6 text-center">
-              <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <TrendingDown className="h-6 w-6 text-red-500" />
+            <div className="bg-gray-50 rounded-2xl p-8 text-left border border-gray-100 hover:border-[#99F700]/30 hover:shadow-lg transition-all duration-300">
+              <div className="w-14 h-14 bg-[#99F700] rounded-xl flex items-center justify-center mb-5">
+                <Repeat className="h-7 w-7 text-black" />
               </div>
-              <p className="text-gray-600">Engajamento que cai com o tempo</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Desafios internos</h3>
+              <p className="text-gray-600 leading-relaxed">Recorrencia e recompensas</p>
             </div>
-            <div className="bg-gray-50 rounded-2xl p-6 text-center">
-              <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Heart className="h-6 w-6 text-red-500" />
+            <div className="bg-gray-50 rounded-2xl p-8 text-left border border-gray-100 hover:border-[#FF7816]/30 hover:shadow-lg transition-all duration-300">
+              <div className="w-14 h-14 bg-[#FF7816] rounded-xl flex items-center justify-center mb-5">
+                <Trophy className="h-7 w-7 text-white" />
               </div>
-              <p className="text-gray-600">Falta de pertencimento</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Competicoes entre empresas</h3>
+              <p className="text-gray-600 leading-relaxed">Team Building e employer branding</p>
             </div>
-          </div>
-
-          <div className="mt-12 p-6 bg-[#99F700]/10 rounded-2xl border border-[#99F700]/30">
-            <p className="text-lg text-gray-700">
-              <span className="font-bold text-[#99F700]">A MeshMe parte de uma lógica diferente.</span>
-              <br />
-              Pessoas se movem juntas. O RH cria as condições para isso escalar.
-            </p>
           </div>
         </div>
       </div>

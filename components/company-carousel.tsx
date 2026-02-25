@@ -58,11 +58,8 @@ export default function CompanyCarousel() {
       <div className="container mx-auto px-4 mb-8">
         <div className="text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
-            <span className="text-[#FF7816]">times</span> que estão no app
+            Empresas que competem com a <span className="text-[#FF7816]">MeshMe</span>
           </h2>
-          <p className="text-lg text-gray-600">
-            Empresas que já transformaram sua cultura através da MeshMe
-          </p>
         </div>
       </div>
       <div className="w-full overflow-hidden">

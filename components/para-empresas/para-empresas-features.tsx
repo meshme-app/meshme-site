@@ -1,106 +1,29 @@
 "use client"
 
-import { BarChart3, Repeat, Gift, Users, Dumbbell, TrendingUp, CheckCircle } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { ArrowRight, Download, Settings, ShoppingCart } from "lucide-react"
 
-const features = [
+const steps = [
   {
-    icon: BarChart3,
     number: "01",
-    title: "Visibilidade real de engajamento",
-    subtitle: "Acompanhe participação ativa. Não apenas cadastro.",
-    description: "Tenha acesso a métricas que realmente importam para entender o impacto do programa de bem-estar.",
+    icon: Download,
+    title: "Baixe o app e crie o perfil da sua empresa",
+    description: "Voce recebera acesso ao painel do RH para gerenciar tudo.",
     color: "bg-[#FF7816]",
-    iconColor: "text-white",
-    image: "/dashboard-analytics.png",
-    bullets: [
-      "Engajamento, frequência e recorrência",
-      "Atividades realizadas",
-      "Dados por área, cargo, perfil e faixa etária",
-      "Leitura clara do que realmente gera hábito"
-    ]
   },
   {
-    icon: Repeat,
     number: "02",
-    title: "Engajamento contínuo ao longo do ano",
-    subtitle: "Menos campanhas pontuais. Mais rotina.",
-    description: "Mantenha seus colaboradores ativos durante todo o ano com ferramentas que facilitam a gestão.",
+    icon: Settings,
+    title: "Defina as metas e desafios para seus colaboradores",
+    description: "Configure desafios personalizados de acordo com os objetivos da sua empresa.",
     color: "bg-[#99F700]",
-    iconColor: "text-black",
-    image: "/challenge-mockup.png",
-    bullets: [
-      "Desafios ilimitados",
-      "Templates prontos para diferentes objetivos",
-      "Sustentação de engajamento mês após mês",
-      "Sem sobrecarga operacional para o RH"
-    ]
   },
   {
-    icon: Gift,
     number: "03",
-    title: "Incentivos que reforçam comportamento real",
-    subtitle: "Recompense quem se mantém ativo e puxa o grupo junto.",
-    description: "Sistema de recompensas que valoriza a constância e o impacto coletivo.",
+    icon: ShoppingCart,
+    title: "Compre Mesh Points de acordo com seu orcamento",
+    description: "Personalize como os pontos serao distribuidos entre seus colaboradores.",
     color: "bg-[#FF7816]",
-    iconColor: "text-white",
-    image: "/meshcoins-iphone.png",
-    bullets: [
-      "Moeda digital exclusiva da MeshMe",
-      "Troca por produtos e experiências saudáveis",
-      "Incentivos ligados à constância, não à inscrição",
-      "Cultura ativa que se multiplica de forma orgânica"
-    ]
-  },
-  {
-    icon: Users,
-    number: "04",
-    title: "Comunidades esportivas que criam pertencimento",
-    subtitle: "Pessoas voltam quando fazem parte de algo.",
-    description: "Crie comunidades reais que conectam colaboradores através do esporte.",
-    color: "bg-[#99F700]",
-    iconColor: "text-black",
-    image: "/running-club-photo.png",
-    bullets: [
-      "Comunidade de corrida com descontos em provas",
-      "Opções de coparticipação em inscrições",
-      "Inscrição e gestão de grupos",
-      "Atendimento dedicado nas provas"
-    ],
-    extraBullets: [
-      "Aluguel de quadras",
-      "Coparticipação da empresa",
-      "Grupos recorrentes por modalidade"
-    ]
-  },
-  {
-    icon: Dumbbell,
-    number: "05",
-    title: "Clube MeshMe. Rotina esportiva para agendas cheias",
-    subtitle: "Quando o esporte entra na agenda, o hábito se consolida.",
-    description: "Grupos fixos que facilitam a prática regular de atividades físicas.",
-    color: "bg-[#FF7816]",
-    iconColor: "text-white",
-    image: "/club-mockup.png",
-    bullets: [
-      "Grupos fixos em locais e horários compatíveis",
-      "Acesso exclusivo para colaboradores elegíveis do Plano Pro",
-      "Menos fricção. Mais consistência."
-    ]
-  },
-  {
-    icon: TrendingUp,
-    number: "06",
-    title: "Mais incentivos, mais recorrência",
-    subtitle: "Quem está no Plano Pro participa mais.",
-    description: "Colaboradores elegíveis têm mais chances de engajar e ganhar prêmios.",
-    color: "bg-[#99F700]",
-    iconColor: "text-black",
-    image: "/meshme-celebration.png",
-    bullets: [
-      "Colaboradores elegíveis têm 2.5x mais chances de ganhar prêmios",
-      "Maior exposição a eventos, grupos e recompensas",
-      "Efeito rede dentro e fora da empresa"
-    ]
   },
 ]
 
@@ -109,105 +32,46 @@ export default function ParaEmpresasFeatures() {
     <section id="funcionalidades" className="py-20 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <span className="text-[#FF7816] font-semibold text-lg">Como funciona</span>
-          <h2 className="text-4xl font-bold text-gray-900 mt-2 mb-4">
-            Como a MeshMe funciona
-            <span className="text-[#FF7816]"> para o RH</span>
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4">
+            Como <span className="text-[#FF7816]">funciona</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Ferramentas completas para criar, gerenciar e escalar programas de bem-estar corporativo
-          </p>
         </div>
 
-        <div className="space-y-24">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                index % 2 === 1 ? "lg:flex-row-reverse" : ""
-              }`}
-            >
-              {/* Content Side */}
-              <div className={`space-y-5 ${index % 2 === 1 ? "lg:order-2" : ""}`}>
-                <div className="flex items-center gap-3">
-                  <div
-                    className={`w-12 h-12 rounded-xl ${feature.color} flex items-center justify-center shadow-md`}
-                  >
-                    <feature.icon className={`h-6 w-6 ${feature.iconColor}`} />
-                  </div>
-                  <span className="text-4xl font-bold text-gray-200">{feature.number}</span>
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 leading-tight">{feature.title}</h3>
-                <p className="text-lg font-semibold text-[#FF7816]">{feature.subtitle}</p>
-                <p className="text-base text-gray-600 leading-relaxed">{feature.description}</p>
-                
-                <ul className="space-y-3 pt-2">
-                  {feature.bullets.map((bullet, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-[#99F700] flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
+        <div className="max-w-4xl mx-auto">
+          <div className="relative">
+            {/* Vertical line connecting steps */}
+            <div className="absolute left-8 top-10 bottom-10 w-0.5 bg-gray-200 hidden md:block" />
 
-                {feature.extraBullets && (
-                  <div className="pt-4 border-t border-gray-100">
-                    <p className="text-sm font-semibold text-gray-500 mb-3">Comunidades esportivas diversas:</p>
-                    <ul className="space-y-2">
-                      {feature.extraBullets.map((bullet, i) => (
-                        <li key={i} className="flex items-start gap-3">
-                          <CheckCircle className="h-4 w-4 text-[#FF7816] flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-600 text-sm">{bullet}</span>
-                        </li>
-                      ))}
-                    </ul>
+            <div className="space-y-12">
+              {steps.map((step, index) => (
+                <div key={index} className="relative flex items-start gap-8">
+                  {/* Step number circle */}
+                  <div className={`relative z-10 flex-shrink-0 w-16 h-16 ${step.color} rounded-2xl flex items-center justify-center shadow-lg`}>
+                    <step.icon className={`h-7 w-7 ${step.color === "bg-[#99F700]" ? "text-black" : "text-white"}`} />
                   </div>
-                )}
-              </div>
 
-              {/* Image Side */}
-              <div className={`relative ${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                <div className="relative flex justify-center items-center h-80 md:h-96 lg:h-[420px]">
-                  {index === 1 ? (
-                    /* iPhone Frame for feature 2 */
-                    <div className="relative h-full flex items-center">
-                      {/* iPhone Frame */}
-                      <div className="relative w-[180px] md:w-[200px] lg:w-[210px]">
-                        {/* Phone body */}
-                        <div className="relative bg-gray-900 rounded-[2rem] p-2 shadow-2xl">
-                          {/* Dynamic Island */}
-                          <div className="absolute top-2.5 left-1/2 -translate-x-1/2 w-16 h-4 bg-black rounded-full z-10" />
-                          {/* Screen */}
-                          <div className="relative bg-white rounded-[1.5rem] overflow-hidden h-[320px] md:h-[360px] lg:h-[380px]">
-                            <img
-                              src="/desafios-finalizados-screen.png"
-                              alt={feature.title}
-                              className="w-full h-full object-cover object-top"
-                            />
-                          </div>
-                        </div>
-                        {/* Side button */}
-                        <div className="absolute right-[-2px] top-20 w-0.5 h-8 bg-gray-800 rounded-l-sm" />
-                        {/* Volume buttons */}
-                        <div className="absolute left-[-2px] top-16 w-0.5 h-5 bg-gray-800 rounded-r-sm" />
-                        <div className="absolute left-[-2px] top-24 w-0.5 h-8 bg-gray-800 rounded-r-sm" />
-                      </div>
+                  {/* Content */}
+                  <div className="flex-1 bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:border-[#FF7816]/20 hover:shadow-md transition-all duration-300">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="text-3xl font-bold text-gray-200">{step.number}</span>
+                      <h3 className="text-xl font-bold text-gray-900">{step.title}</h3>
                     </div>
-                  ) : (
-                    <img
-                      src={feature.image || "/placeholder.svg"}
-                      alt={feature.title}
-                      className="w-auto h-80 md:h-96 lg:h-[420px] object-contain rounded-xl shadow-lg"
-                    />
-                  )}
-                  {/* Decorative gradient */}
-                  <div
-                    className={`absolute -z-10 inset-0 ${feature.color} opacity-10 rounded-xl blur-2xl transform scale-105`}
-                  />
+                    <p className="text-gray-600 leading-relaxed">{step.description}</p>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          {/* CTA */}
+          <div className="text-center mt-16">
+            <Button size="lg" className="bg-[#FF7816] hover:bg-[#FF7816]/90 text-white group h-14 px-8 text-base font-bold" asChild>
+              <a href="https://api.whatsapp.com/send/?phone=5511917790769&text=Ol%C3%A1!%20Gostaria%20de%20conferir%20exemplos%20de%20um%20plano%20anual%20MeshMe." target="_blank" rel="noopener noreferrer">
+                Confira exemplos de um plano anual
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
