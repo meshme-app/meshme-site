@@ -65,7 +65,7 @@ export default function ParaEmpresasCTA() {
                     <p className="text-sm text-gray-300 leading-relaxed mb-2">
                       Programas de wellness corporativo reduzem custos médicos em <span className="text-[#99F700] font-bold">US$ 3,27 para cada US$ 1 investido</span>.
                     </p>
-                    <a href="https://www.healthaffairs.org/" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#99F700] transition-colors inline-flex items-center gap-1">
+                    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2873731/" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#99F700] transition-colors inline-flex items-center gap-1">
                       Health Affairs <ExternalLink className="h-3 w-3" />
                     </a>
                   </div>
@@ -82,7 +82,7 @@ export default function ParaEmpresasCTA() {
                     <p className="text-sm text-gray-300 leading-relaxed mb-2">
                       Unidades com alto engajamento têm <span className="text-[#FF7816] font-bold">81% menos absenteísmo</span>.
                     </p>
-                    <a href="https://www.gallup.com/" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#FF7816] transition-colors inline-flex items-center gap-1">
+                    <a href="https://www.gallup.com/workplace/236927/employee-engagement-drives-growth.aspx" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#FF7816] transition-colors inline-flex items-center gap-1">
                       Gallup <ExternalLink className="h-3 w-3" />
                     </a>
                   </div>
@@ -99,7 +99,7 @@ export default function ParaEmpresasCTA() {
                     <p className="text-sm text-gray-300 leading-relaxed mb-2">
                       Unidades com alto engajamento têm <span className="text-[#99F700] font-bold">18% mais produtividade</span> (sales).
                     </p>
-                    <a href="https://www.gallup.com/" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#99F700] transition-colors inline-flex items-center gap-1">
+                    <a href="https://www.gallup.com/workplace/236927/employee-engagement-drives-growth.aspx" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#99F700] transition-colors inline-flex items-center gap-1">
                       Gallup <ExternalLink className="h-3 w-3" />
                     </a>
                   </div>
@@ -116,7 +116,7 @@ export default function ParaEmpresasCTA() {
                     <p className="text-sm text-gray-300 leading-relaxed mb-2">
                       Unidades com alto engajamento têm <span className="text-[#FF7816] font-bold">18% a 43% menos turnover</span>, dependendo do perfil da empresa.
                     </p>
-                    <a href="https://www.gallup.com/" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#FF7816] transition-colors inline-flex items-center gap-1">
+                    <a href="https://www.gallup.com/workplace/236927/employee-engagement-drives-growth.aspx" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#FF7816] transition-colors inline-flex items-center gap-1">
                       Gallup <ExternalLink className="h-3 w-3" />
                     </a>
                   </div>
