@@ -1,29 +1,56 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Download, Settings, ShoppingCart } from "lucide-react"
+import {
+  ArrowRight,
+  Download,
+  Settings,
+  ShoppingCart,
+  Camera,
+  Gift,
+  ChevronRight,
+} from "lucide-react"
 
 const steps = [
   {
-    number: "01",
+    number: "1",
     icon: Download,
-    title: "Baixe o app e crie o perfil da sua empresa",
-    description: "Você receberá acesso ao painel do RH para gerenciar tudo.",
+    title: "Baixe o app e crie o perfil da empresa",
+    description: "Você recebe acesso ao painel do RH para gerenciar tudo.",
     color: "bg-[#FF7816]",
+    iconColor: "text-white",
   },
   {
-    number: "02",
+    number: "2",
     icon: Settings,
-    title: "Defina as metas e desafios para seus colaboradores",
+    title: "Defina metas e desafios",
     description: "Configure desafios personalizados de acordo com os objetivos da sua empresa.",
     color: "bg-[#99F700]",
+    iconColor: "text-black",
   },
   {
-    number: "03",
+    number: "3",
     icon: ShoppingCart,
-    title: "Compre Mesh Points de acordo com seu orçamento",
+    title: "Compre Mesh Points",
     description: "Personalize como os pontos serão distribuídos entre seus colaboradores.",
     color: "bg-[#FF7816]",
+    iconColor: "text-white",
+  },
+  {
+    number: "4",
+    icon: Camera,
+    title: "Colaboradores registram atividades",
+    description: "Validação automática por fotos, relógios inteligentes e integração com Strava.",
+    color: "bg-[#99F700]",
+    iconColor: "text-black",
+  },
+  {
+    number: "5",
+    icon: Gift,
+    title: "Metas batidas, prêmios na conta",
+    description: "Quem atinge as metas definidas pelo RH recebe Mesh Points e troca por produtos e experiências.",
+    color: "bg-[#FF7816]",
+    iconColor: "text-white",
   },
 ]
 
@@ -37,26 +64,56 @@ export default function ParaEmpresasFeatures() {
           </h2>
         </div>
 
-        <div className="max-w-3xl mx-auto">
-          <div className="relative">
-            {/* Vertical line connecting steps */}
-            <div className="absolute left-6 top-8 bottom-8 w-0.5 bg-gray-200 hidden md:block" />
-
-            <div className="space-y-6">
+        <div className="max-w-6xl mx-auto">
+          {/* Horizontal steps - desktop */}
+          <div className="hidden lg:block">
+            <div className="grid grid-cols-5 gap-4">
               {steps.map((step, index) => (
-                <div key={index} className="relative flex items-start gap-5">
-                  {/* Step number circle */}
-                  <div className={`relative z-10 flex-shrink-0 w-12 h-12 ${step.color} rounded-xl flex items-center justify-center shadow-lg`}>
-                    <step.icon className={`h-5 w-5 ${step.color === "bg-[#99F700]" ? "text-black" : "text-white"}`} />
+                <div key={index} className="relative flex flex-col items-center text-center">
+                  {/* Connector arrow */}
+                  {index < steps.length - 1 && (
+                    <div className="absolute top-5 left-[calc(50%+24px)] right-[calc(-50%+24px)] flex items-center justify-center z-0">
+                      <div className="w-full h-0.5 bg-gray-200" />
+                      <ChevronRight className="h-4 w-4 text-gray-300 -ml-1 flex-shrink-0" />
+                    </div>
+                  )}
+
+                  {/* Icon */}
+                  <div className={`relative z-10 w-10 h-10 ${step.color} rounded-lg flex items-center justify-center mb-4`}>
+                    <step.icon className={`h-5 w-5 ${step.iconColor}`} />
                   </div>
 
                   {/* Content */}
-                  <div className="flex-1 bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-[#FF7816]/20 hover:shadow-md transition-all duration-300">
-                    <h3 className="text-base font-bold text-gray-900 mb-1">{step.title}</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">{step.description}</p>
+                  <div className="bg-gray-50 rounded-xl p-4 border border-gray-100 flex-1 w-full">
+                    <span className="text-xs font-bold text-[#FF7816] mb-1 block">Passo {step.number}</span>
+                    <h3 className="text-sm font-bold text-gray-900 mb-1 leading-snug">{step.title}</h3>
+                    <p className="text-xs text-gray-600 leading-relaxed">{step.description}</p>
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* Vertical steps - mobile/tablet */}
+          <div className="lg:hidden max-w-md mx-auto">
+            <div className="relative">
+              <div className="absolute left-5 top-5 bottom-5 w-0.5 bg-gray-200" />
+
+              <div className="space-y-5">
+                {steps.map((step, index) => (
+                  <div key={index} className="relative flex items-start gap-4">
+                    <div className={`relative z-10 flex-shrink-0 w-10 h-10 ${step.color} rounded-lg flex items-center justify-center`}>
+                      <step.icon className={`h-5 w-5 ${step.iconColor}`} />
+                    </div>
+
+                    <div className="flex-1 bg-gray-50 rounded-xl p-4 border border-gray-100">
+                      <span className="text-xs font-bold text-[#FF7816]">Passo {step.number}</span>
+                      <h3 className="text-sm font-bold text-gray-900 mb-1">{step.title}</h3>
+                      <p className="text-xs text-gray-600 leading-relaxed">{step.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
