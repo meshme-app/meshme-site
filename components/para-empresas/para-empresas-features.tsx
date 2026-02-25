@@ -29,34 +29,31 @@ const steps = [
 
 export default function ParaEmpresasFeatures() {
   return (
-    <section id="funcionalidades" className="py-20 bg-white relative overflow-hidden">
+    <section id="funcionalidades" className="py-16 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900">
             Como <span className="text-[#FF7816]">funciona</span>
           </h2>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <div className="relative">
             {/* Vertical line connecting steps */}
-            <div className="absolute left-8 top-10 bottom-10 w-0.5 bg-gray-200 hidden md:block" />
+            <div className="absolute left-6 top-8 bottom-8 w-0.5 bg-gray-200 hidden md:block" />
 
-            <div className="space-y-12">
+            <div className="space-y-6">
               {steps.map((step, index) => (
-                <div key={index} className="relative flex items-start gap-8">
+                <div key={index} className="relative flex items-start gap-5">
                   {/* Step number circle */}
-                  <div className={`relative z-10 flex-shrink-0 w-16 h-16 ${step.color} rounded-2xl flex items-center justify-center shadow-lg`}>
-                    <step.icon className={`h-7 w-7 ${step.color === "bg-[#99F700]" ? "text-black" : "text-white"}`} />
+                  <div className={`relative z-10 flex-shrink-0 w-12 h-12 ${step.color} rounded-xl flex items-center justify-center shadow-lg`}>
+                    <step.icon className={`h-5 w-5 ${step.color === "bg-[#99F700]" ? "text-black" : "text-white"}`} />
                   </div>
 
                   {/* Content */}
-                  <div className="flex-1 bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:border-[#FF7816]/20 hover:shadow-md transition-all duration-300">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="text-3xl font-bold text-gray-200">{step.number}</span>
-                      <h3 className="text-xl font-bold text-gray-900">{step.title}</h3>
-                    </div>
-                    <p className="text-gray-600 leading-relaxed">{step.description}</p>
+                  <div className="flex-1 bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-[#FF7816]/20 hover:shadow-md transition-all duration-300">
+                    <h3 className="text-base font-bold text-gray-900 mb-1">{step.title}</h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">{step.description}</p>
                   </div>
                 </div>
               ))}
@@ -64,7 +61,7 @@ export default function ParaEmpresasFeatures() {
           </div>
 
           {/* CTA */}
-          <div className="text-center mt-16">
+          <div className="text-center mt-10">
             <Button size="lg" className="bg-[#FF7816] hover:bg-[#FF7816]/90 text-white group h-14 px-8 text-base font-bold" asChild>
               <a href="https://api.whatsapp.com/send/?phone=5511917790769&text=Ol%C3%A1!%20Gostaria%20de%20conferir%20exemplos%20de%20um%20plano%20anual%20MeshMe." target="_blank" rel="noopener noreferrer">
                 Confira exemplos de um plano anual
