@@ -27,18 +27,18 @@ export default function ParaEmpresasHero() {
                 </span>
               </div>
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight text-balance">
-                A plataforma de competicoes corporativas que recompensa colaboradores pela
-                <span className="text-[#99F700]"> pratica recorrente de atividade fisica.</span>
+                A plataforma de competições corporativas que recompensa colaboradores pela
+                <span className="text-[#99F700]"> prática recorrente de atividade física.</span>
               </h1>
               <p className="text-xl text-gray-300 max-w-lg leading-relaxed">
-                Utilizada por mais de 600 empresas em 6 paises.
+                Utilizada por mais de 600 empresas em 6 países.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-[#FF7816] hover:bg-[#FF7816]/90 text-white group" asChild>
                 <a href="https://api.whatsapp.com/send/?phone=5511917790769&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Pr%C3%B3%20para%20empresas." target="_blank" rel="noopener noreferrer">
-                  Fale ja com um especialista
+                  Fale já com um especialista
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>

@@ -23,7 +23,7 @@ export default function ParaEmpresasDifferential() {
               <div className="w-10 h-10 bg-[#FF7816] rounded-lg flex items-center justify-center mb-3">
                 <Zap className="h-5 w-5 text-white" />
               </div>
-              <h3 className="text-white text-lg font-bold mb-1">Configuracao simples</h3>
+              <h3 className="text-white text-lg font-bold mb-1">Configuração simples</h3>
               <p className="text-sm text-gray-400 leading-relaxed">Implemente na sua empresa em menos de 15 min.</p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-[#99F700]/40 transition-all duration-300">
@@ -31,13 +31,13 @@ export default function ParaEmpresasDifferential() {
                 <Gift className="h-5 w-5 text-black" />
               </div>
               <h3 className="text-white text-lg font-bold mb-1">Gratuito para empresas</h3>
-              <p className="text-sm text-gray-400 leading-relaxed">Nossa remuneracao vem dos parceiros de premiacao.</p>
+              <p className="text-sm text-gray-400 leading-relaxed">Nossa remuneração vem dos parceiros de premiação.</p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-[#FF7816]/40 transition-all duration-300">
               <div className="w-10 h-10 bg-[#FF7816] rounded-lg flex items-center justify-center mb-3">
                 <Link2 className="h-5 w-5 text-white" />
               </div>
-              <h3 className="text-white text-lg font-bold mb-1">Conexao entre o digital e o mundo real</h3>
+              <h3 className="text-white text-lg font-bold mb-1">Conexão entre o digital e o mundo real</h3>
               <p className="text-sm text-gray-400 leading-relaxed">Fazemos os colaboradores vestirem a camisa da empresa, literalmente.</p>
             </div>
           </div>

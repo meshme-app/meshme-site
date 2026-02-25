@@ -8,7 +8,7 @@ const steps = [
     number: "01",
     icon: Download,
     title: "Baixe o app e crie o perfil da sua empresa",
-    description: "Voce recebera acesso ao painel do RH para gerenciar tudo.",
+    description: "Você receberá acesso ao painel do RH para gerenciar tudo.",
     color: "bg-[#FF7816]",
   },
   {
@@ -21,8 +21,8 @@ const steps = [
   {
     number: "03",
     icon: ShoppingCart,
-    title: "Compre Mesh Points de acordo com seu orcamento",
-    description: "Personalize como os pontos serao distribuidos entre seus colaboradores.",
+    title: "Compre Mesh Points de acordo com seu orçamento",
+    description: "Personalize como os pontos serão distribuídos entre seus colaboradores.",
     color: "bg-[#FF7816]",
   },
 ]

@@ -13,9 +13,9 @@ export default function ParaEmpresasProblem() {
           </div>
 
           <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-10 leading-tight">
-            Somos especialistas em competicoes,
+            Somos especialistas em competições,
             <br />
-            <span className="text-[#FF7816]">por que competicao engaja!</span>
+            <span className="text-[#FF7816]">porque competição engaja!</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -31,13 +31,13 @@ export default function ParaEmpresasProblem() {
                 <Repeat className="h-5 w-5 text-black" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-1">Desafios internos</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">Recorrencia e recompensas</p>
+              <p className="text-sm text-gray-600 leading-relaxed">Recorrência e recompensas</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6 text-left border border-gray-100 hover:border-[#FF7816]/30 hover:shadow-lg transition-all duration-300">
               <div className="w-10 h-10 bg-[#FF7816] rounded-lg flex items-center justify-center mb-3">
                 <Trophy className="h-5 w-5 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-1">Competicoes entre empresas</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-1">Competições entre empresas</h3>
               <p className="text-sm text-gray-600 leading-relaxed">Team Building e employer branding</p>
             </div>
           </div>

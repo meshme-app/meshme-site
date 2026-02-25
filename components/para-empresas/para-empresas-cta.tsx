@@ -19,14 +19,14 @@ export default function ParaEmpresasCTA() {
                 <div className="w-14 h-14 bg-[#FF7816]/10 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-[#FF7816] transition-colors duration-300">
                   <Heart className="h-7 w-7 text-[#FF7816] group-hover:text-white transition-colors duration-300" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-1">Saude</h3>
-                <p className="text-sm text-gray-600">Habitos saudaveis que se sustentam ao longo do tempo</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">Saúde</h3>
+                <p className="text-sm text-gray-600">Hábitos saudáveis que se sustentam ao longo do tempo</p>
               </div>
               <div className="group">
                 <div className="w-14 h-14 bg-[#99F700]/10 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-[#99F700] transition-colors duration-300">
                   <Users className="h-7 w-7 text-[#99F700] group-hover:text-black transition-colors duration-300" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-1">Conexao</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">Conexão</h3>
                 <p className="text-sm text-gray-600">Colaboradores que se conhecem e se apoiam no dia a dia</p>
               </div>
               <div className="group">
@@ -34,7 +34,7 @@ export default function ParaEmpresasCTA() {
                   <Shield className="h-7 w-7 text-[#FF7816] group-hover:text-white transition-colors duration-300" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Pertencimento</h3>
-                <p className="text-sm text-gray-600">Cultura corporativa viva que atrai e retem talentos</p>
+                <p className="text-sm text-gray-600">Cultura corporativa viva que atrai e retém talentos</p>
               </div>
             </div>
           </div>
@@ -61,9 +61,9 @@ export default function ParaEmpresasCTA() {
                     <DollarSign className="h-5 w-5 text-black" />
                   </div>
                   <div>
-                    <h3 className="text-white text-base font-bold mb-1">Custo com saude</h3>
+                    <h3 className="text-white text-base font-bold mb-1">Custo com saúde</h3>
                     <p className="text-sm text-gray-300 leading-relaxed mb-2">
-                      Programas de wellness corporativo reduzem custos medicos em <span className="text-[#99F700] font-bold">US$ 3,27 para cada US$ 1 investido</span>.
+                      Programas de wellness corporativo reduzem custos médicos em <span className="text-[#99F700] font-bold">US$ 3,27 para cada US$ 1 investido</span>.
                     </p>
                     <a href="https://www.healthaffairs.org/" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#99F700] transition-colors inline-flex items-center gap-1">
                       Health Affairs <ExternalLink className="h-3 w-3" />
@@ -78,9 +78,9 @@ export default function ParaEmpresasCTA() {
                     <Clock className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-white text-base font-bold mb-1">Absenteismo</h3>
+                    <h3 className="text-white text-base font-bold mb-1">Absenteísmo</h3>
                     <p className="text-sm text-gray-300 leading-relaxed mb-2">
-                      Unidades com alto engajamento tem <span className="text-[#FF7816] font-bold">81% menos absenteismo</span>.
+                      Unidades com alto engajamento têm <span className="text-[#FF7816] font-bold">81% menos absenteísmo</span>.
                     </p>
                     <a href="https://www.gallup.com/" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#FF7816] transition-colors inline-flex items-center gap-1">
                       Gallup <ExternalLink className="h-3 w-3" />
@@ -97,7 +97,7 @@ export default function ParaEmpresasCTA() {
                   <div>
                     <h3 className="text-white text-base font-bold mb-1">Produtividade</h3>
                     <p className="text-sm text-gray-300 leading-relaxed mb-2">
-                      Unidades com alto engajamento tem <span className="text-[#99F700] font-bold">18% mais produtividade</span> (sales).
+                      Unidades com alto engajamento têm <span className="text-[#99F700] font-bold">18% mais produtividade</span> (sales).
                     </p>
                     <a href="https://www.gallup.com/" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#99F700] transition-colors inline-flex items-center gap-1">
                       Gallup <ExternalLink className="h-3 w-3" />
@@ -112,9 +112,9 @@ export default function ParaEmpresasCTA() {
                     <UserMinus className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-white text-base font-bold mb-1">Retencao</h3>
+                    <h3 className="text-white text-base font-bold mb-1">Retenção</h3>
                     <p className="text-sm text-gray-300 leading-relaxed mb-2">
-                      Unidades com alto engajamento tem <span className="text-[#FF7816] font-bold">18% a 43% menos turnover</span>, dependendo do perfil da empresa.
+                      Unidades com alto engajamento têm <span className="text-[#FF7816] font-bold">18% a 43% menos turnover</span>, dependendo do perfil da empresa.
                     </p>
                     <a href="https://www.gallup.com/" target="_blank" rel="noopener noreferrer" className="text-xs text-gray-500 hover:text-[#FF7816] transition-colors inline-flex items-center gap-1">
                       Gallup <ExternalLink className="h-3 w-3" />

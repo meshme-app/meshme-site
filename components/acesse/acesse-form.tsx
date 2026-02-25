@@ -59,7 +59,7 @@ export default function AcesseForm() {
                 <span className="text-[#FF7816]"> engajar sua equipe</span>
               </h1>
               <p className="text-gray-600 mt-4 leading-relaxed">
-                Preencha o formulario e nosso time entrara em contato para apresentar a plataforma, discutir o melhor plano para sua empresa e mostrar exemplos de competicoes corporativas.
+                Preencha o formulário e nosso time entrará em contato para apresentar a plataforma, discutir o melhor plano para sua empresa e mostrar exemplos de competições corporativas.
               </p>
             </div>
 
@@ -69,8 +69,8 @@ export default function AcesseForm() {
                   <CheckCircle className="h-4 w-4 text-[#99F700]" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-gray-900">Configuracao em menos de 15 min</p>
-                  <p className="text-xs text-gray-500">Sem integracao complexa, sem fricao</p>
+                  <p className="text-sm font-semibold text-gray-900">Configuração em menos de 15 min</p>
+                  <p className="text-xs text-gray-500">Sem integração complexa, sem fricção</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -79,7 +79,7 @@ export default function AcesseForm() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-gray-900">Gratuito para empresas</p>
-                  <p className="text-xs text-gray-500">Remuneracao vem dos parceiros de premiacao</p>
+                  <p className="text-xs text-gray-500">Remuneração vem dos parceiros de premiação</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -87,7 +87,7 @@ export default function AcesseForm() {
                   <CheckCircle className="h-4 w-4 text-[#99F700]" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-gray-900">+600 empresas em 6 paises</p>
+                  <p className="text-sm font-semibold text-gray-900">+600 empresas em 6 países</p>
                   <p className="text-xs text-gray-500">Plataforma testada e aprovada</p>
                 </div>
               </div>
@@ -103,14 +103,14 @@ export default function AcesseForm() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">Recebemos seus dados!</h3>
                 <p className="text-sm text-gray-600 max-w-sm mx-auto">
-                  Nosso time entrara em contato em breve para apresentar a plataforma e discutir o melhor plano para sua empresa.
+                  Nosso time entrará em contato em breve para apresentar a plataforma e discutir o melhor plano para sua empresa.
                 </p>
                 <Link
                   href="/para-empresas"
                   className="inline-flex items-center gap-2 text-[#FF7816] font-semibold text-sm hover:underline mt-4"
                 >
                   <ArrowLeft className="h-4 w-4" />
-                  Voltar para a pagina
+                  Voltar para a página
                 </Link>
               </div>
             ) : (
@@ -152,7 +152,7 @@ export default function AcesseForm() {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         className="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#FF7816]/30 focus:border-[#FF7816] transition-colors"
-                        placeholder="voce@empresa.com.br"
+                        placeholder="você@empresa.com.br"
                       />
                     </div>
                   </div>
@@ -195,7 +195,7 @@ export default function AcesseForm() {
 
                   <div>
                     <label htmlFor="employees" className="block text-sm font-medium text-gray-700 mb-1">
-                      Quantidade de funcionarios
+                      Quantidade de funcionários
                     </label>
                     <div className="relative">
                       <Users className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
@@ -206,7 +206,7 @@ export default function AcesseForm() {
                         onChange={(e) => setFormData({ ...formData, employees: e.target.value })}
                         className="w-full pl-10 pr-4 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#FF7816]/30 focus:border-[#FF7816] transition-colors appearance-none bg-white"
                       >
-                        <option value="">Selecione</option>
+                        <option value="">Selecione...</option>
                         <option value="1-50">1 - 50</option>
                         <option value="51-200">51 - 200</option>
                         <option value="201-500">201 - 500</option>
@@ -225,9 +225,9 @@ export default function AcesseForm() {
                   </Button>
 
                   <p className="text-xs text-gray-400 text-center">
-                    Ao enviar, voce concorda com nossos{" "}
+                    Ao enviar, você concorda com nossos{" "}
                     <Link href="/termos-e-condicoes" className="underline hover:text-gray-600">
-                      termos e condicoes
+                      termos e condições
                     </Link>.
                   </p>
                 </form>

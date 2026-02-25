@@ -23,7 +23,7 @@ export default function ParaEmpresasManifesto() {
               Acreditamos que cada movimento importa
             </h2>
             <p className="text-white/90 text-lg leading-relaxed max-w-lg">
-              Criamos a MeshMe para tornar a atividade fisica acessivel, social e recompensadora. Com tecnologia, competicao saudavel e uma comunidade vibrante, transformamos esforco em conquista e movimento em habito.
+              Criamos a MeshMe para tornar a atividade física acessível, social e recompensadora. Com tecnologia, competição saudável e uma comunidade vibrante, transformamos esforço em conquista e movimento em hábito.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
@@ -46,7 +46,7 @@ export default function ParaEmpresasManifesto() {
             {/* Partner logos */}
             <div className="pt-6">
               <p className="text-white/60 text-xs font-semibold uppercase tracking-wider mb-4">
-                Base de parceiros de premiacao
+                Base de parceiros de premiação
               </p>
               <div className="flex flex-wrap items-center gap-6">
                 {partners.map((partner) => (

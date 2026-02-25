@@ -1,20 +1,20 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "MeshMe | Para Empresas - Competicoes corporativas que engajam",
+  title: "MeshMe | Para Empresas - Competições corporativas que engajam",
   description:
-    "A plataforma de competicoes corporativas que recompensa colaboradores pela pratica recorrente de atividade fisica. Utilizada por mais de 600 empresas em 6 paises.",
+    "A plataforma de competições corporativas que recompensa colaboradores pela prática recorrente de atividade física. Utilizada por mais de 600 empresas em 6 países.",
   openGraph: {
-    title: "MeshMe | Para Empresas - Competicoes corporativas que engajam",
+    title: "MeshMe | Para Empresas - Competições corporativas que engajam",
     description:
-      "A plataforma de competicoes corporativas que recompensa colaboradores pela pratica recorrente de atividade fisica. Utilizada por mais de 600 empresas em 6 paises.",
+      "A plataforma de competições corporativas que recompensa colaboradores pela prática recorrente de atividade física. Utilizada por mais de 600 empresas em 6 países.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "MeshMe | Para Empresas - Competicoes corporativas que engajam",
+    title: "MeshMe | Para Empresas - Competições corporativas que engajam",
     description:
-      "A plataforma de competicoes corporativas que recompensa colaboradores pela pratica recorrente de atividade fisica. Utilizada por mais de 600 empresas em 6 paises.",
+      "A plataforma de competições corporativas que recompensa colaboradores pela prática recorrente de atividade física. Utilizada por mais de 600 empresas em 6 países.",
   },
 }
 
