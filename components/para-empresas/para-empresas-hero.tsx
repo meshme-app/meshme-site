@@ -7,10 +7,10 @@ export default function ParaEmpresasHero() {
   return (
     <section
       id="para-empresas"
-      className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 pt-32 pb-20 overflow-hidden"
+      className="relative bg-gray-50 pt-32 pb-20 overflow-hidden"
     >
       {/* Background Elements */}
-      <div className="absolute top-10 right-10 w-32 h-32 bg-[#FF7816]/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute top-10 right-10 w-32 h-32 bg-[#FF7816]/10 rounded-full blur-3xl animate-pulse" />
       <div
         className="absolute bottom-20 left-10 w-40 h-40 bg-[#99F700]/10 rounded-full blur-3xl animate-pulse"
         style={{ animationDelay: "1s" }}
@@ -26,11 +26,11 @@ export default function ParaEmpresasHero() {
                   Para Empresas
                 </span>
               </div>
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight text-balance">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight text-balance">
                 A plataforma de competições corporativas que recompensa colaboradores pela
-                <span className="text-[#99F700]"> prática recorrente de atividade física.</span>
+                <span className="text-[#FF7816]"> prática recorrente de atividade física.</span>
               </h1>
-              <p className="text-xl text-gray-300 max-w-lg leading-relaxed">
+              <p className="text-xl text-gray-500 max-w-lg leading-relaxed">
                 Utilizada por mais de 600 empresas em 6 países.
               </p>
             </div>
@@ -54,7 +54,7 @@ export default function ParaEmpresasHero() {
               />
             </div>
             {/* Decorative elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#99F700] rounded-full opacity-20 animate-pulse" />
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#99F700] rounded-full opacity-15 animate-pulse" />
             <div
               className="absolute -bottom-4 -left-4 w-32 h-32 bg-[#FF7816] rounded-full opacity-10 animate-pulse"
               style={{ animationDelay: "1s" }}
