@@ -64,7 +64,7 @@ const steps = [
   },
 ]
 
-const AUTO_CYCLE_INTERVAL = 4000
+const AUTO_CYCLE_INTERVAL = 3000
 
 export default function ParaEmpresasFeatures() {
   const [activeStep, setActiveStep] = useState(0)
