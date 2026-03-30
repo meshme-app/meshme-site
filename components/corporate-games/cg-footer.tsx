@@ -1,116 +1,144 @@
-"use client"
-
-import Link from "next/link"
-import { Instagram, Linkedin, Mail, Phone } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react"
 
 export default function CGFooter() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Brand */}
+    <footer className="bg-gray-900 text-white pt-16 pb-8 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 bg-grid-pattern-red"></div>
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {/* About */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-[#B91C1C] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">CG</span>
-              </div>
-              <div>
-                <span className="font-bold text-lg block">CORPORATE GAMES</span>
-                <span className="text-sm text-gray-400">São Paulo 2026</span>
-              </div>
+            <div className="flex items-center mb-4">
+              <span className="font-bold text-xl text-[#B91C1C]">Corporate Games</span>
+              <span className="text-white/60 ml-2 text-sm">by MeshMe</span>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              A maior olimpíada corporativa do Brasil. Conectando empresas através do esporte.
+            <p className="text-gray-400 mb-6">
+              A maior olimpíada corporativa do Brasil, promovendo esporte, cultura, employer branding e team building entre empresas.
             </p>
+            <div className="flex space-x-4">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="rounded-full hover:bg-gray-800 transform hover:scale-110 transition-transform"
+                asChild
+              >
+                <a
+                  href="https://www.instagram.com/_meshme?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Instagram className="h-5 w-5 text-gray-400" />
+                </a>
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="rounded-full hover:bg-gray-800 transform hover:scale-110 transition-transform"
+                asChild
+              >
+                <a
+                  href="https://www.linkedin.com/company/meshmeapp/?viewAsMember=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin className="h-5 w-5 text-gray-400" />
+                </a>
+              </Button>
+            </div>
           </div>
 
-          {/* Links */}
+          {/* Quick Links */}
           <div>
-            <h4 className="font-bold text-white mb-4">O Evento</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
+            <h3 className="font-bold text-lg mb-4">Links Rápidos</h3>
+            <ul className="space-y-2">
               <li>
-                <Link href="#sobre" className="hover:text-[#B91C1C] transition-colors">
-                  Sobre o Corporate Games
-                </Link>
+                <a
+                  href="#sobre-cg"
+                  className="text-gray-400 hover:text-[#B91C1C] transform hover:translate-x-1 transition-transform inline-block"
+                >
+                  Sobre o Evento
+                </a>
               </li>
               <li>
-                <Link href="#modalidades" className="hover:text-[#B91C1C] transition-colors">
+                <a
+                  href="#modalidades"
+                  className="text-gray-400 hover:text-[#B91C1C] transform hover:translate-x-1 transition-transform inline-block"
+                >
                   Modalidades
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="#como-funciona" className="hover:text-[#B91C1C] transition-colors">
-                  Como participar
-                </Link>
+                <a
+                  href="#detalhes"
+                  className="text-gray-400 hover:text-[#B91C1C] transform hover:translate-x-1 transition-transform inline-block"
+                >
+                  Calendário
+                </a>
               </li>
               <li>
-                <Link href="#faq" className="hover:text-[#B91C1C] transition-colors">
-                  FAQ
-                </Link>
+                <a
+                  href="#empresas"
+                  className="text-gray-400 hover:text-[#B91C1C] transform hover:translate-x-1 transition-transform inline-block"
+                >
+                  Empresas Participantes
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#galeria"
+                  className="text-gray-400 hover:text-[#B91C1C] transform hover:translate-x-1 transition-transform inline-block"
+                >
+                  Galeria de Fotos
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#faq-cg"
+                  className="text-gray-400 hover:text-[#B91C1C] transform hover:translate-x-1 transition-transform inline-block"
+                >
+                  Perguntas Frequentes
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/termos-e-condicoes"
+                  className="text-gray-400 hover:text-[#B91C1C] transform hover:translate-x-1 transition-transform inline-block"
+                >
+                  Termos e Condições
+                </a>
               </li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-bold text-white mb-4">Contato</h4>
-            <ul className="space-y-3 text-sm text-gray-400">
-              <li className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-[#B91C1C]" />
-                <a href="mailto:corporategames@meshme.com.br" className="hover:text-[#B91C1C] transition-colors">
-                  corporategames@meshme.com.br
-                </a>
+            <h3 className="font-bold text-lg mb-4">Contato</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start">
+                <MapPin className="h-5 w-5 text-[#B91C1C] mr-2 mt-0.5" />
+                <span className="text-gray-400">
+                  Rua Doutor Renato Paes de Barros 618 Conj 1,
+                  <br />
+                  Itaim Bibi, São Paulo - SP - 04530-000
+                </span>
               </li>
-              <li className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-[#B91C1C]" />
-                <a href="tel:+5511917790769" className="hover:text-[#B91C1C] transition-colors">
-                  +55 11 91779-0769
-                </a>
+              <li className="flex items-center">
+                <Phone className="h-5 w-5 text-[#B91C1C] mr-2" />
+                <span className="text-gray-400">(11) 91779-0769</span>
+              </li>
+              <li className="flex items-center">
+                <Mail className="h-5 w-5 text-[#B91C1C] mr-2" />
+                <span className="text-gray-400">corporategames@meshme.com.br</span>
               </li>
             </ul>
           </div>
-
-          {/* Social */}
-          <div>
-            <h4 className="font-bold text-white mb-4">Redes Sociais</h4>
-            <div className="flex gap-4">
-              <a
-                href="https://instagram.com/corporategamesbr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#B91C1C] transition-colors"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://linkedin.com/company/corporate-games-brasil"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-[#B91C1C] transition-colors"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </div>
-          </div>
         </div>
 
-        {/* Bottom */}
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-gray-500">
-            {new Date().getFullYear()} Corporate Games. Operado por{" "}
-            <a href="https://meshme.com.br" className="text-[#B91C1C] hover:underline">
-              MeshMe
-            </a>
-            .
-          </p>
-          <div className="flex gap-6 text-sm text-gray-500">
-            <Link href="/documentos/politica-privacidade" className="hover:text-white transition-colors">
-              Política de Privacidade
-            </Link>
-            <Link href="/documentos/termos-eventos/corporate-games-2026" className="hover:text-white transition-colors">
-              Termos de Uso
-            </Link>
-          </div>
+        <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+          <p>© {new Date().getFullYear()} Corporate Games by MeshMe. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

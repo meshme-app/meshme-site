@@ -2,115 +2,131 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
-
-const navLinks = [
-  { href: "#sobre", label: "O evento" },
-  { href: "#beneficios", label: "Benefícios" },
-  { href: "#como-funciona", label: "Como funciona" },
-  { href: "#modalidades", label: "Modalidades" },
-  { href: "#faq", label: "FAQ" },
-]
 
 export default function CGNavbar() {
   const [isOpen, setIsOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [currentPath, setCurrentPath] = useState("")
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+    setCurrentPath(window.location.pathname)
   }, [])
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-    setIsOpen(false)
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
   }
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md" : "bg-transparent"
-      }`}
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/corporate-games" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-[#B91C1C] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">CG</span>
-            </div>
-            <div className={`transition-colors ${isScrolled ? "text-gray-900" : "text-white"}`}>
-              <span className="font-bold text-lg">CORPORATE GAMES</span>
-              <span className="block text-xs opacity-70">São Paulo 2026</span>
-            </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logos/meshme-navbar-logo.png"
+              alt="MeshMe Logo"
+              width={120}
+              height={32}
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <button
-                key={link.href}
-                onClick={() => scrollToSection(link.href)}
-                className={`font-medium text-sm transition-colors hover:text-[#B91C1C] ${
-                  isScrolled ? "text-gray-700" : "text-white/90"
-                }`}
-              >
-                {link.label}
-              </button>
-            ))}
+          <div className="hidden md:flex items-center space-x-2">
+            <Link
+              href="/para-pessoas"
+              className="px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 transform hover:scale-105 text-gray-700 hover:bg-[#99F700] hover:text-black hover:shadow-lg hover:shadow-lime-200"
+            >
+              Para pessoas
+            </Link>
+            <Link
+              href="/para-empresas"
+              className="px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 transform hover:scale-105 text-gray-700 hover:bg-[#FF7816] hover:text-white hover:shadow-lg hover:shadow-orange-200"
+            >
+              Para empresas
+            </Link>
+            <Link
+              href="/eventos"
+              className="px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 transform hover:scale-105 bg-[#B91C1C] text-white shadow-lg shadow-red-200"
+            >
+              Eventos
+            </Link>
+            <Link
+              href="/blog"
+              className="px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 transform hover:scale-105 text-gray-700 hover:bg-gray-900 hover:text-white hover:shadow-lg hover:shadow-gray-300"
+            >
+              Blog
+            </Link>
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            <Button
-              className="bg-[#B91C1C] hover:bg-[#991B1B] text-white font-semibold px-6 rounded-full"
-              asChild
+          {/* CTA Buttons (Desktop) */}
+          <div className="hidden md:flex items-center space-x-4">
+            <a
+              href="https://forms.gle/SqD9f7rjD5yFJT7k7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-[#B91C1C] text-white rounded-md hover:bg-[#B91C1C]/90 transition-colors font-semibold"
             >
-              <Link href="/corporate-games/inscricao">
-                Quero levar minha empresa
-              </Link>
-            </Button>
+              Inscreva-se
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className={`lg:hidden p-2 ${isScrolled ? "text-gray-700" : "text-white"}`}
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="md:hidden">
+            <button
+              onClick={toggleMenu}
+              className="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden bg-white shadow-xl border-t border-gray-100">
-          <div className="container mx-auto px-4 py-6 space-y-4">
-            {navLinks.map((link) => (
-              <button
-                key={link.href}
-                onClick={() => scrollToSection(link.href)}
-                className="block w-full text-left py-2 text-gray-700 hover:text-[#B91C1C] font-medium"
+        <div className="md:hidden bg-white shadow-xl absolute top-16 left-0 right-0 z-50 border-t border-gray-100">
+          <div className="px-4 pt-4 pb-6 space-y-2">
+            <Link
+              href="/para-pessoas"
+              className="block px-4 py-3 rounded-xl text-base font-semibold transition-all duration-200 text-gray-700 hover:bg-[#99F700]/10 hover:text-[#99F700]"
+              onClick={() => setIsOpen(false)}
+            >
+              Para pessoas
+            </Link>
+            <Link
+              href="/para-empresas"
+              className="block px-4 py-3 rounded-xl text-base font-semibold transition-all duration-200 text-gray-700 hover:bg-[#FF7816]/10 hover:text-[#FF7816]"
+              onClick={() => setIsOpen(false)}
+            >
+              Para empresas
+            </Link>
+            <Link
+              href="/eventos"
+              className="block px-4 py-3 rounded-xl text-base font-semibold transition-all duration-200 bg-[#B91C1C] text-white shadow-md"
+              onClick={() => setIsOpen(false)}
+            >
+              Eventos
+            </Link>
+            <Link
+              href="/blog"
+              className="block px-4 py-3 rounded-xl text-base font-semibold transition-all duration-200 text-gray-700 hover:bg-gray-100"
+              onClick={() => setIsOpen(false)}
+            >
+              Blog
+            </Link>
+
+            {/* CTA Buttons (Mobile) */}
+            <div className="pt-4 space-y-2">
+              <a
+                href="https://forms.gle/SqD9f7rjD5yFJT7k7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full px-4 py-2 text-center bg-[#B91C1C] text-white rounded-md hover:bg-[#B91C1C]/90 transition-colors font-semibold"
               >
-                {link.label}
-              </button>
-            ))}
-            <div className="pt-4 border-t border-gray-100">
-              <Button
-                className="w-full bg-[#B91C1C] hover:bg-[#991B1B] text-white font-semibold rounded-full"
-                asChild
-              >
-                <Link href="/corporate-games/inscricao">
-                  Quero levar minha empresa
-                </Link>
-              </Button>
+                Inscreva-se
+              </a>
             </div>
           </div>
         </div>
