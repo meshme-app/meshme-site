@@ -1,0 +1,143 @@
+"use client"
+
+import { useEffect, useRef } from "react"
+import { Card } from "@/components/ui/card"
+
+const photos = [
+  {
+    src: "/gallery/tennis-players.png",
+    alt: "Jogadores de tênis em ação durante partida",
+    sport: "Tênis",
+  },
+  {
+    src: "/gallery/soccer-team-orange.png",
+    alt: "Time de futebol comemorando em campo",
+    sport: "Futebol",
+  },
+  {
+    src: "/gallery/beach-volleyball-jump.png",
+    alt: "Jogador de vôlei de praia saltando para atacar",
+    sport: "Vôlei de Praia",
+  },
+  {
+    src: "/gallery/beach-tennis-celebration.png",
+    alt: "Dupla de beach tennis comemorando ponto",
+    sport: "Beach Tennis",
+  },
+  {
+    src: "/gallery/soccer-victory.png",
+    alt: "Jogador comemorando vitória no futebol",
+    sport: "Futebol",
+  },
+  {
+    src: "/gallery/group-celebration.png",
+    alt: "Grande grupo celebrando com brinde",
+    sport: "Confraternização",
+  },
+  {
+    src: "/gallery/team-green-smoke.png",
+    alt: "Time comemorando com sinalizadores verdes",
+    sport: "Celebração",
+  },
+  {
+    src: "/gallery/womens-volleyball-huddle.png",
+    alt: "Time feminino de vôlei em concentração",
+    sport: "Vôlei Feminino",
+  },
+  {
+    src: "/gallery/indoor-tennis.png",
+    alt: "Jogador de tênis em quadra coberta",
+    sport: "Tênis Indoor",
+  },
+  {
+    src: "/gallery/soccer-intergestoras.png",
+    alt: "Partida do InterGestoras 2024",
+    sport: "InterGestoras",
+  },
+]
+
+export default function CGPhotoGallery() {
+  const scrollRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const scrollContainer = scrollRef.current
+    if (!scrollContainer) return
+
+    let animationId: number
+    let scrollPosition = 0
+    const scrollSpeed = 0.8
+
+    const scroll = () => {
+      if (!scrollContainer) return
+      scrollPosition += scrollSpeed
+      if (scrollPosition >= scrollContainer.scrollWidth / 2) {
+        scrollPosition = 0
+      }
+      scrollContainer.scrollLeft = scrollPosition
+      animationId = requestAnimationFrame(scroll)
+    }
+
+    const timeoutId = setTimeout(() => {
+      animationId = requestAnimationFrame(scroll)
+    }, 1000)
+
+    return () => {
+      clearTimeout(timeoutId)
+      cancelAnimationFrame(animationId)
+    }
+  }, [])
+
+  const duplicatedPhotos = [...photos, ...photos]
+
+  return (
+    <section id="galeria" className="py-20 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <span className="text-[#B91C1C] font-semibold text-sm tracking-wider uppercase mb-4 block">
+            GALERIA
+          </span>
+          <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
+            Reviva os melhores momentos
+          </h2>
+        </div>
+      </div>
+
+      <div className="w-full overflow-hidden">
+        <div ref={scrollRef} className="flex gap-6 py-4 overflow-x-hidden">
+          {duplicatedPhotos.map((photo, index) => (
+            <Card
+              key={index}
+              className="flex-shrink-0 w-80 h-60 overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              <div className="relative h-full w-full group">
+                <img
+                  src={photo.src}
+                  alt={photo.alt}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="font-semibold text-sm bg-[#B91C1C] px-2 py-1 rounded">
+                      {photo.sport}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4">
+        <div className="text-center mt-8">
+          <p className="text-gray-600">
+            Quer ver sua empresa nas próximas fotos?{" "}
+            <a href="/corporate-games/inscricao" className="text-[#B91C1C] font-semibold hover:underline">
+              Inscreva-se agora!
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  )
+}
