@@ -22,6 +22,7 @@ import {
   Star,
   Building2,
 } from "lucide-react"
+import GoalCalculator from "@/components/para-empresas/goal-calculator"
 
 export const metadata: Metadata = {
   title: "MeshMe | Guia de Criação de Desafios Corporativos",
@@ -302,59 +303,19 @@ export default function GuiaDesafiosPage() {
         </div>
       </section>
 
-      {/* Seção 5 — Como Calcular a Meta */}
+      {/* Seção 5 — Calculadora de Meta */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="text-[#FF7816] font-semibold text-sm uppercase tracking-widest">Planejamento</span>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mt-2 mb-4">
-                Como Calcular a Meta Individual
-              </h2>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                A meta é individual — cada participante vê seu próprio progresso em uma barra de porcentagem.
-              </p>
-
-              <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100 mb-6">
-                <p className="font-semibold text-gray-900 mb-3">Exemplo prático — 30 dias, sistema Dias Ativos:</p>
-                <div className="space-y-2 text-gray-700">
-                  <div className="flex items-center gap-2">
-                    <ArrowRight className="h-4 w-4 text-[#FF7816]" />
-                    <span>4 semanas no mês</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <ArrowRight className="h-4 w-4 text-[#FF7816]" />
-                    <span>× 4 dias de atividade por semana</span>
-                  </div>
-                  <div className="flex items-center gap-2 pt-2 border-t border-gray-200 mt-2">
-                    <ArrowRight className="h-4 w-4 text-[#99F700]" />
-                    <span className="font-bold text-gray-900">= 16 pontos como meta mínima recomendada</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3 bg-blue-50 rounded-xl p-4 border border-blue-100">
-                <Lightbulb className="h-5 w-5 text-blue-500 mt-0.5 shrink-0" />
-                <p className="text-sm text-blue-700">
-                  Evite metas diárias — nem todos conseguem praticar todos os dias. Metas semanais são mais acessíveis e motivadoras.
-                </p>
-              </div>
-            </div>
-
-            {/* Destaques numéricos */}
-            <div className="grid grid-cols-1 gap-5">
-              {[
-                { value: "4×", label: "atividades/semana", color: "bg-[#FF7816]" },
-                { value: "16 pts", label: "meta recomendada (30 dias)", color: "bg-[#99F700]" },
-                { value: "∞", label: "desafios simultâneos", color: "bg-gray-900" },
-              ].map((stat) => (
-                <div key={stat.label} className={`${stat.color} rounded-2xl p-6 flex items-center gap-5`}>
-                  <span className="text-4xl font-black text-white">{stat.value}</span>
-                  <span className="text-white/80 text-lg font-medium">{stat.label}</span>
-                </div>
-              ))}
-            </div>
+          <div className="text-center mb-10">
+            <span className="text-[#FF7816] font-semibold text-sm uppercase tracking-widest">Planejamento</span>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mt-2">
+              Calculadora de Meta Individual
+            </h2>
+            <p className="text-gray-500 mt-3 max-w-xl mx-auto">
+              A meta é individual — cada participante vê seu próprio progresso em uma barra de porcentagem. Use a calculadora para definir a pontuação ideal.
+            </p>
           </div>
+          <GoalCalculator />
         </div>
       </section>
 
