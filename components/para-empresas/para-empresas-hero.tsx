@@ -43,8 +43,8 @@ export default function ParaEmpresasHero() {
                 </a>
               </Button>
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 bg-transparent" asChild>
-                <a href="#funcionalidades">
-                  Ver funcionalidades
+                <a href="/guia-desafios">
+                  Criar desafio da minha empresa
                 </a>
               </Button>
             </div>
