@@ -2,7 +2,12 @@
   "redirects": [
     {
       "source": "/awarded-challenge/:id",
-      "destination": "https://meshme.com.br",
+      "destination": "https://meshme.app/index.html",
+      "permanent": false
+    },
+    {
+      "source": "/desafio/:id",
+      "destination": "https://meshme.app/index.html",
       "permanent": false
     }
   ]
