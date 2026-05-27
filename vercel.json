@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/awarded-challenge/:id",
+      "destination": "https://meshme.com.br",
+      "permanent": false
+    }
+  ]
+}
