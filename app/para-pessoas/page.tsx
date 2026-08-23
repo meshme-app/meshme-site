@@ -16,6 +16,8 @@ export const metadata: Metadata = {
     description:
       "Sozinho, com colegas ou com a sua empresa. Registre suas atividades, crie desafios e participe de eventos reais. Prêmios e comunidade fazem parte da jornada.",
   },
+  // Mesmo conteudo servido em "/" — a home e a URL canonica.
+  alternates: { canonical: "/" },
 }
 
 import MainNavbar from "@/components/main-navbar"
