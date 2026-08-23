@@ -35,7 +35,7 @@ export default function AppAbout() {
                 que une colaboradores por meio de <strong>atividades físicas, gamificação e pertencimento</strong>. Além
                 do nosso ecossistema digital, promovemos a{" "}
                 <Link
-                  href="/liga-da-firma"
+                  href="https://www.corporategamesbrasil.com"
                   className="text-[#FF6600] font-bold hover:underline hover:text-[#e55a00] transition-all duration-200"
                 >
                   Liga da Firma
