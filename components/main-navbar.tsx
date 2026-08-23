@@ -60,7 +60,7 @@ export default function MainNavbar() {
               href="https://www.corporategamesbrasil.com"
               className="px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 transform hover:scale-105 text-gray-700 hover:bg-[#FF7816] hover:text-white hover:shadow-lg hover:shadow-orange-200"
             >
-              Eventos
+              Corporate Games
             </a>
             <Link
               href="/blog"
@@ -139,7 +139,7 @@ export default function MainNavbar() {
               className="block px-4 py-3 rounded-xl text-base font-semibold transition-all duration-200 text-gray-700 hover:bg-[#FF7816]/10 hover:text-[#FF7816]"
               onClick={() => setIsOpen(false)}
             >
-              Eventos
+              Corporate Games
             </a>
             <Link
               href="/blog"
