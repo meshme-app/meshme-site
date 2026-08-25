@@ -1,14 +1,13 @@
 "use client"
 
 import { Activity, Users, MapPin, Building2 } from "lucide-react"
+import { useLanguage } from "@/components/language-provider"
+import { homeFeatures } from "@/lib/site-translations"
 
-const features = [
+const featureMeta = [
   {
     icon: Activity,
     number: "01",
-    title: "Registre suas atividades e concorra a prêmios",
-    description:
-      "Poste seus treinos com modalidade, tempo e distância. Acompanhe sua evolução, acumule pontos e concorra a prêmios exclusivos da plataforma.",
     color: "bg-[#FF7816]",
     iconColor: "text-white",
     image: "/challenge-feed-mockup.png",
@@ -17,9 +16,6 @@ const features = [
   {
     icon: Users,
     number: "02",
-    title: "Crie desafios de atividade física com seus colegas",
-    description:
-      "Monte desafios personalizados com amigos ou colegas de trabalho. Defina metas, acompanhe rankings e celebre conquistas juntos.",
     color: "bg-[#99F700]",
     iconColor: "text-black",
     image: "/challenge-mockup.png",
@@ -27,9 +23,6 @@ const features = [
   {
     icon: MapPin,
     number: "03",
-    title: "Encontre corridas de rua e grupos esportivos recorrentes",
-    description:
-      "Descubra eventos próximos a você, grupos de corrida, peladas de futebol, treinos de beach tennis e muito mais. A comunidade está esperando por você.",
     color: "bg-[#FF7816]",
     iconColor: "text-white",
     image: "/running-club-photo.png",
@@ -37,9 +30,6 @@ const features = [
   {
     icon: Building2,
     number: "04",
-    title: "Crie o perfil da sua empresa e convide mais pessoas",
-    description:
-      "Você não precisa ser do RH para começar uma comunidade esportiva na sua empresa. Crie o perfil corporativo, convide colegas e promova o bem-estar no trabalho.",
     color: "bg-[#99F700]",
     iconColor: "text-black",
     image: "/club-mockup.png",
@@ -47,18 +37,20 @@ const features = [
 ]
 
 export default function ParaPessoasFeatures() {
+  const { language } = useLanguage()
+  const t = homeFeatures[language]
+  const features = featureMeta.map((meta, i) => ({ ...meta, ...t.items[i] }))
+
   return (
     <section id="funcionalidades" className="py-20 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <span className="text-[#FF7816] font-semibold text-lg">Como funciona</span>
+          <span className="text-[#FF7816] font-semibold text-lg">{t.badge}</span>
           <h2 className="text-4xl font-bold text-gray-900 mt-2 mb-4">
-            Sua jornada esportiva
-            <span className="text-[#FF7816]"> começa aqui</span>
+            {t.titleStart}
+            <span className="text-[#FF7816]"> {t.titleHighlight}</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Ferramentas simples e poderosas para você se manter ativo, conectado e motivado
-          </p>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">{t.subtitle}</p>
         </div>
 
         <div className="space-y-20">
@@ -83,7 +75,7 @@ export default function ParaPessoasFeatures() {
                 <p className="text-base text-gray-600 leading-relaxed">{feature.description}</p>
                 {feature.integrations && (
                   <div className="flex flex-wrap gap-2 pt-2">
-                    <span className="text-sm text-gray-500 font-medium">Integrado com:</span>
+                    <span className="text-sm text-gray-500 font-medium">{t.integrationsLabel}</span>
                     {feature.integrations.map((integration, i) => (
                       <span
                         key={i}
@@ -95,9 +87,7 @@ export default function ParaPessoasFeatures() {
                   </div>
                 )}
                 {index === 3 && (
-                  <p className="text-sm text-gray-500 italic border-l-4 border-[#99F700] pl-4">
-                    Dica: Se fizer sentido, indique para o seu RH e acumule ainda mais vantagens para você e seus colegas.
-                  </p>
+                  <p className="text-sm text-gray-500 italic border-l-4 border-[#99F700] pl-4">{t.tip}</p>
                 )}
               </div>
 

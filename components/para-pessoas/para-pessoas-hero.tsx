@@ -5,8 +5,13 @@ import { Calendar } from "@/components/ui/calendar"
 import { Button } from "@/components/ui/button"
 import { Download, ArrowRight, Smartphone } from "lucide-react"
 import { Users, Trophy } from "lucide-react" // Importing Users and Trophy icons
+import { useLanguage } from "@/components/language-provider"
+import { homeHero } from "@/lib/site-translations"
 
 export default function ParaPessoasHero() {
+  const { language } = useLanguage()
+  const t = homeHero[language]
+
   return (
     <section
       id="para-pessoas"
@@ -25,16 +30,17 @@ export default function ParaPessoasHero() {
             <div className="space-y-6">
               <div className="inline-block">
                 <span className="bg-[#99F700] text-black px-4 py-2 rounded-full text-sm font-semibold">
-                  Para Pessoas
+                  {t.badge}
                 </span>
               </div>
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
-                Sozinho, com colegas ou com a sua empresa.
-                <span className="text-[#FF7816]"> Comece agora na MeshMe.</span>
+                {t.titleLine1}
+                <span className="text-[#FF7816]"> {t.titleHighlight}</span>
               </h1>
               <p className="text-xl text-gray-600 max-w-lg leading-relaxed">
-                Registre suas atividades, crie desafios e participe de eventos reais.
-                <span className="font-semibold"> Prêmios e comunidade</span> fazem parte da jornada.
+                {t.paragraphStart}
+                <span className="font-semibold">{t.paragraphHighlight}</span>
+                {t.paragraphEnd}
               </p>
             </div>
 
@@ -42,7 +48,7 @@ export default function ParaPessoasHero() {
               <Button size="lg" className="bg-[#FF7816] hover:bg-[#FF7816]/90 text-white group" asChild>
                 <a href="https://apps.apple.com/br/app/meshme/id6453362660" target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-                  Começar agora. É grátis.
+                  {t.ctaPrimary}
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
@@ -54,7 +60,7 @@ export default function ParaPessoasHero() {
               >
                 <Link href="/como-funciona">
                   <Smartphone className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                  Ver como funciona
+                  {t.ctaSecondary}
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>

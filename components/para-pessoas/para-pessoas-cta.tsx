@@ -2,8 +2,13 @@
 
 import { Button } from "@/components/ui/button"
 import { Download, Shield, Star, Users } from "lucide-react"
+import { useLanguage } from "@/components/language-provider"
+import { homeCta } from "@/lib/site-translations"
 
 export default function ParaPessoasCTA() {
+  const { language } = useLanguage()
+  const t = homeCta[language]
+
   return (
     <section
       id="download"
@@ -17,13 +22,11 @@ export default function ParaPessoasCTA() {
         <div className="text-center space-y-8">
           <div className="space-y-4">
             <h2 className="text-4xl lg:text-5xl font-bold text-white">
-              Pronto para começar
+              {t.titleLine1}
               <br />
-              <span className="text-[#99F700]">sua jornada?</span>
+              <span className="text-[#99F700]">{t.titleHighlight}</span>
             </h2>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto">
-              Junte-se a milhares de pessoas que já estão se movimentando, competindo e se conectando através da MeshMe
-            </p>
+            <p className="text-xl text-white/90 max-w-2xl mx-auto">{t.subtitle}</p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -56,19 +59,19 @@ export default function ParaPessoasCTA() {
           <div className="flex flex-wrap items-center justify-center gap-8 pt-8">
             <div className="flex items-center space-x-2 text-white/90">
               <Shield className="h-5 w-5" />
-              <span className="text-sm">Dados seguros</span>
+              <span className="text-sm">{t.badges.secure}</span>
             </div>
             <div className="flex items-center space-x-2 text-white/90">
               <Star className="h-5 w-5 text-yellow-300 fill-current" />
-              <span className="text-sm">4.8/5 Avaliação</span>
+              <span className="text-sm">{t.badges.rating}</span>
             </div>
             <div className="flex items-center space-x-2 text-white/90">
               <Download className="h-5 w-5" />
-              <span className="text-sm">100% gratuito</span>
+              <span className="text-sm">{t.badges.free}</span>
             </div>
             <div className="flex items-center space-x-2 text-white/90">
               <Users className="h-5 w-5" />
-              <span className="text-sm">+10k usuários</span>
+              <span className="text-sm">{t.badges.users}</span>
             </div>
           </div>
         </div>
