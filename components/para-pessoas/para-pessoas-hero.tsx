@@ -1,8 +1,9 @@
 "use client"
 
+import Link from "next/link"
 import { Calendar } from "@/components/ui/calendar"
 import { Button } from "@/components/ui/button"
-import { Download, ArrowRight } from "lucide-react"
+import { Download, ArrowRight, Smartphone } from "lucide-react"
 import { Users, Trophy } from "lucide-react" // Importing Users and Trophy icons
 
 export default function ParaPessoasHero() {
@@ -44,6 +45,18 @@ export default function ParaPessoasHero() {
                   Começar agora. É grátis.
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </a>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-[#FF7816] text-[#FF7816] hover:bg-[#FF7816]/10 group bg-transparent"
+                asChild
+              >
+                <Link href="/como-funciona">
+                  <Smartphone className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                  Ver como funciona
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </Button>
             </div>
           </div>
